@@ -24,6 +24,7 @@ To run Y-Rhythm, please ensure your computer has the following:
    for .jar files).
 3. If this is your first time, click "Create Account" to set up your 
    secure, local profile.
+4. Then, sign in with your passcode and username, and click sign-in to start your journey
 
 ------------------------------------------------------------------------
 3. PRIVACY & DATA SECURITY
@@ -42,6 +43,7 @@ Your data stays with YOU.
 - WELLNESS STATUS: Get real-time feedback on your emotional rhythm.
 - CSV EXPORT: Securely export your data to a spreadsheet to share 
   with health professionals or for your own records.
+- WELLNESS MAP: Added a Google Maps Website to help people find parks and nature trails across the York Region.
 - CRISIS SUPPORT: One-click access to York Region emergency resources.
 
 ------------------------------------------------------------------------
@@ -56,6 +58,6 @@ If you are in immediate need of help, please contact:
 - 360 kids: 905-475-6694
 
 ========================================================================
-Created with Care in Richmond Hill, Ontario.
-2025 by Nana Osei Nketiah.
+Created in February 2025 by Nana Osei Nketiah in Richmond Hill, Canada.
+Used JavaFX + Maven through IntelliJ Community Edition.
 ========================================================================
