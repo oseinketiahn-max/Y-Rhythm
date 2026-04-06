@@ -33,14 +33,26 @@ public class RegisterUI {
         backBtn.setStyle("-fx-background-color: transparent; -fx-text-fill: #558b2f;");
 
         regBtn.setOnAction(e -> {
+            if (user.getText().trim().isEmpty()) {
+                new Alert(Alert.AlertType.ERROR, "Username cannot be empty").show();
+                return;
+            }
             if (!pass.getText().equals(confirm.getText())) {
                 new Alert(Alert.AlertType.ERROR, "Passwords do not match").show();
                 return;
             }
             try {
+                // SAVING ACCOUNT: Persists to users.txt
                 UserRepository.register(user.getText(), pass.getText().toCharArray());
+
+                // CONFIRMATION: Informs user account is saved
+                Alert success = new Alert(Alert.AlertType.INFORMATION, "Account successfully saved! You can now log in.");
+                success.showAndWait();
+
                 new LoginUI(stage);
-            } catch (Exception ex) { new Alert(Alert.AlertType.ERROR, ex.getMessage()).show(); }
+            } catch (Exception ex) {
+                new Alert(Alert.AlertType.ERROR, ex.getMessage()).show();
+            }
         });
 
         backBtn.setOnAction(e -> new LoginUI(stage));

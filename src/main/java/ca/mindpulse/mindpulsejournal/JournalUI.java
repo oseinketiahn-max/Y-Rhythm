@@ -2,6 +2,7 @@ package ca.mindpulse.mindpulsejournal;
 
 import javafx.collections.FXCollections;
 import javafx.geometry.Insets;
+import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.chart.*;
 import javafx.scene.control.*;
@@ -25,7 +26,7 @@ public class JournalUI {
         this.username = username;
         stage.setTitle("Y-Rhythm | " + username);
 
-        // --- 1. HEADER (Search & Sync) ---
+        // --- 1. HEADER ---
         DatePicker picker = new DatePicker(LocalDate.now());
         Button searchBtn = new Button("Search");
         Button syncBtn = new Button("☁ Sync Cloud");
@@ -36,7 +37,7 @@ public class JournalUI {
         header.setPadding(new Insets(15));
         header.setStyle("-fx-background-color: rgba(255,255,255,0.4); -fx-border-color: #a5d6a7; -fx-border-width: 0 0 2 0;");
 
-        // --- 2. CENTER (Table & Chart) ---
+        // --- 2. CENTER (Dashboard) ---
         setupTable();
         NumberAxis xAxis = new NumberAxis();
         NumberAxis yAxis = new NumberAxis(0, 5, 1);
@@ -46,55 +47,69 @@ public class JournalUI {
         VBox centerContent = new VBox(20, header, table, chart);
         centerContent.setPadding(new Insets(10));
 
-        // --- 3. RIGHT PANEL (Entry & Tools) ---
+        // --- 3. RIGHT PANEL (Entry Area) ---
         VBox rightPanel = new VBox(15);
         rightPanel.setPadding(new Insets(15));
-        rightPanel.setPrefWidth(350);
+        rightPanel.setPrefWidth(400);
 
         ComboBox<Mood> moodBox = new ComboBox<>(FXCollections.observableArrayList(Mood.values()));
-        moodBox.setPromptText("Select Mood");
+        moodBox.setPromptText("How are you feeling?");
+        moodBox.setMaxWidth(Double.MAX_VALUE);
 
-        Button promptBtn = new Button("💡 Get Prompt");
-        promptBtn.setOnAction(e -> contentArea.setPromptText(PromptService.getRandomPrompt()));
+        // STYLING: Paragraph Style Configuration
+        contentArea.setPromptText("Share your thoughts...");
+        contentArea.setWrapText(true);
+        // Increases line spacing and adds internal padding for a "journal" feel
+        contentArea.setStyle("-fx-font-family: 'Georgia', serif; " +
+                "-fx-font-size: 15px; " +
+                "-fx-line-spacing: 6px; " +
+                "-fx-padding: 15px; " +
+                "-fx-background-color: #ffffff; " +
+                "-fx-border-color: #e0e0e0;");
+        contentArea.setPrefHeight(450);
+
+        // DYNAMIC MOOD-BASED PROMPT LISTENER
+        moodBox.getSelectionModel().selectedItemProperty().addListener((obs, oldMood, newMood) -> {
+            if (newMood != null && contentArea.getText().trim().isEmpty()) {
+                // Calls the "Sorted" prompt logic from PromptService
+                contentArea.setText(PromptService.getPromptByMood(newMood) + "\n\n");
+            }
+        });
 
         Button saveBtn = new Button("Save Entry");
-        saveBtn.setStyle("-fx-background-color: #2e7d32; -fx-text-fill: white; -fx-font-weight: bold;");
+        saveBtn.setStyle("-fx-background-color: #2e7d32; -fx-text-fill: white; -fx-font-weight: bold; -fx-background-radius: 10;");
+        saveBtn.setMaxWidth(Double.MAX_VALUE);
         saveBtn.setOnAction(e -> handleSave(moodBox));
 
-        // Restoration of Delete & Export
-        Button deleteBtn = new Button("Delete Selected");
+        // TOOLS SECTION
+        Button promptBtn = new Button("💡 Random Prompt");
+        promptBtn.setOnAction(e -> contentArea.setText(PromptService.getRandomPrompt()));
+
+        Button deleteBtn = new Button("Delete Entry");
         deleteBtn.setStyle("-fx-background-color: #d32f2f; -fx-text-fill: white;");
         deleteBtn.setOnAction(e -> handleDelete());
 
-        Button exportBtn = new Button("Export CSV");
-        exportBtn.setOnAction(e -> handleExport());
-
-        // Restoration of Help Button
-        Button helpBtn = new Button("Get Help");
+        Button helpBtn = new Button("Crisis Help");
         helpBtn.setStyle("-fx-border-color: #ffa000; -fx-text-fill: #ff6f00;");
         helpBtn.setOnAction(e -> new Alert(Alert.AlertType.INFORMATION, service.getCrisisResources()).show());
 
-        VBox toolBox = new VBox(10, new Label("Entry Tools:"), promptBtn, deleteBtn, exportBtn, helpBtn);
+        VBox toolBox = new VBox(10, new Label("Writing Tools"), promptBtn, deleteBtn, helpBtn);
         toolBox.setPadding(new Insets(10));
-        toolBox.setStyle("-fx-background-color: rgba(255,255,255,0.5); -fx-background-radius: 10;");
+        toolBox.setStyle("-fx-background-color: rgba(255,255,255,0.6); -fx-background-radius: 10;");
 
-        rightPanel.getChildren().addAll(new Label("New Entry:"), moodBox, contentArea, saveBtn, new Separator(), toolBox);
+        rightPanel.getChildren().addAll(new Label("New Entry"), moodBox, contentArea, saveBtn, new Separator(), toolBox);
 
-        // --- 4. TABS (Idea 1 Integration) ---
+        // --- 4. TABS ---
         TabPane tabPane = new TabPane();
-        Tab dashTab = new Tab("Dashboard", centerContent);
-        Tab mapTab = new Tab("York Wellness Map", WellnessMapUI.getMapNode());
-        dashTab.setClosable(false);
-        mapTab.setClosable(false);
-        tabPane.getTabs().addAll(dashTab, mapTab);
+        tabPane.getTabs().addAll(new Tab("Dashboard", centerContent), new Tab("Wellness Map", WellnessMapUI.getMapNode()));
+        tabPane.getTabs().forEach(t -> t.setClosable(false));
 
-        // --- 5. FINAL LAYOUT ---
         root.setCenter(tabPane);
         root.setRight(rightPanel);
         root.setBottom(riskLabel);
         BorderPane.setMargin(riskLabel, new Insets(10));
 
-        stage.setScene(new Scene(root, 1200, 850));
+        stage.setScene(new Scene(root, 1250, 850));
         refresh();
     }
 
@@ -106,18 +121,22 @@ public class JournalUI {
         TableColumn<JournalEntry, String> cCol = new TableColumn<>("Notes");
         cCol.setCellValueFactory(new PropertyValueFactory<>("content"));
         table.getColumns().addAll(dCol, mCol, cCol);
+        table.setColumnResizePolicy(TableView.CONSTRAINED_RESIZE_POLICY);
     }
 
     private void handleSave(ComboBox<Mood> moodBox) {
         try {
-            if (moodBox.getValue() == null) {
-                new Alert(Alert.AlertType.ERROR, "Please select a mood.").show();
+            Mood mood = moodBox.getValue();
+            String content = contentArea.getText();
+            if (mood == null || content.trim().isEmpty()) {
+                new Alert(Alert.AlertType.WARNING, "Select a mood and write your entry first!").show();
                 return;
             }
             int id = (int) (System.currentTimeMillis() / 1000);
-            JournalEntry entry = new JournalEntry(id, LocalDate.now(), moodBox.getValue(), contentArea.getText());
-            service.saveEntry(entry);
+            service.saveEntry(new JournalEntry(id, LocalDate.now(), mood, content));
+
             contentArea.clear();
+            moodBox.getSelectionModel().clearSelection();
             refresh();
         } catch (Exception ex) { ex.printStackTrace(); }
     }
@@ -132,23 +151,14 @@ public class JournalUI {
         }
     }
 
-    private void handleExport() {
-        try {
-            CSVExporter.export(service.getAllEntries(), username + "_export.csv");
-            new Alert(Alert.AlertType.INFORMATION, "Exported to " + username + "_export.csv").show();
-        } catch (Exception e) { e.printStackTrace(); }
-    }
-
     private void refresh() {
         try {
             List<JournalEntry> entries = service.getAllEntries();
             table.setItems(FXCollections.observableArrayList(entries));
-
             RiskTier tier = service.getRiskTier();
             riskLabel.setText("Health Rhythm: " + tier + " (" + service.getCurrentRiskScore() + "/100)");
-
             updateChart(entries);
-            updateVisuals(entries); // Idea 2: Dynamic Colors
+            updateVisuals(entries);
         } catch (Exception e) { e.printStackTrace(); }
     }
 
