@@ -1,0 +1,6 @@
+Big Farsi model
+
+%WER 17.58 [ 1177 / 6696, 137 ins, 182 del, 858 sub ] exp/chain/tdnn/decode_test_cv/wer_10_0.0
+%WER 16.64 [ 1114 / 6696, 131 ins, 183 del, 800 sub ] exp/chain/tdnn/decode_test_cv_rescore/wer_10_0.0
+%WER 12.28 [ 2473 / 20138, 606 ins, 287 del, 1580 sub ] exp/chain/tdnn/decode_test_fleurs/wer_12_0.0
+%WER 11.39 [ 2294 / 20138, 576 ins, 273 del, 1445 sub ] exp/chain/tdnn/decode_test_fleurs_rescore/wer_12_0.0
