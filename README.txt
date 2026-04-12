@@ -3,59 +3,82 @@ Y-RHYTHM: YORK REGION WELLNESS
 ========================================================================
 A Secure, Vibrant, and Community-Based Mental Health Companion.
 
-Welcome to Y-Rhythm! This application is designed specifically for the 
-residents of Richmond Hill and the wider York Region community to track, 
-visualize, and protect their mental well-being.
+------------------------------------------------------------------------
+MISSION STATEMENT
+------------------------------------------------------------------------
+To empower the youth of York Region by providing a secure, local-first
+digital sanctuary that bridges the gap between computer science and
+emotional well-being.
+
+Y-Rhythm is dedicated to helping young people
+navigate academic pressure and social dynamics through habit-forming
+journaling, smart trend detection, and immediate access to verifiable
+clinical resources—ensuring that no one in our community has to
+go through life's challenges alone.
 
 ------------------------------------------------------------------------
-1. GETTING STARTED
+1. GETTING STARTED & REQUIREMENTS
 ------------------------------------------------------------------------
 To run Y-Rhythm, please ensure your computer has the following:
-- Java Runtime Environment (JRE) 17 or higher installed.
-- At least 10MB of free disk space for encrypted journal storage.
-- A mouse/trackpad and a screen resolution of at least 1024x768.
+- Java Runtime Environment (JRE) 17 or higher.
+- 500MB+ disk space (Required for Multilingual Speech-to-Text models).
+- A working microphone (for the "Voice Journal" feature).
+- Resolution: Minimum 1024x768 for optimal dashboard visualization.
 
 ------------------------------------------------------------------------
 2. HOW TO LAUNCH
 ------------------------------------------------------------------------
-1. Locate the 'Y-Rhythm.jar' file in this folder.
-2. Double-click the file to open. 
-   (If it doesn't open, ensure Java 17 is set as the default program 
-   for .jar files).
-3. If this is your first time, click "Create Account" to set up your 
-   secure, local profile.
+1. Ensure the 'models' folder (containing model-en, model-fr, etc.) is
+   in the same directory as the application.
+2. Double-click 'Y-Rhythm.jar' to launch.
+3. First-time users: Click "Join Y-Rhythm" to create a local account.
+   Your credentials are protected using salted SHA-256 hashing.
 
 ------------------------------------------------------------------------
-3. PRIVACY & DATA SECURITY
+3. PRIVACY & THE "SAFE SPACE" PROTOCOL
 ------------------------------------------------------------------------
-Your data stays with YOU. 
-- All journal entries are ENCRYPTED using your unique password.
-- Data is stored locally on your computer (username_journal.txt).
-- Y-Rhythm does NOT send your personal thoughts to any cloud servers.
-- IMPORTANT: If you forget your password, your data cannot be 
-  recovered by anyone.
+Your data stays with YOU.
+- AES-GCM ENCRYPTION: All journal entries are encrypted using industry-standard AES-GCM. This ensures your thoughts—and even complex
+  symbols remain private and uncorrupted.
+- LOCAL-ONLY PROCESSING: Voice transcription (Vosk) and mood analysis
+  happen entirely on your hardware. No audio or text is ever sent
+  to a cloud server.
+- INTEGRITY CHECKS: The app utilizes GCM Tag validation to ensure your
+  journal hasn't been tampered with or corrupted.
 
 ------------------------------------------------------------------------
 4. KEY FEATURES
 ------------------------------------------------------------------------
-- VIBRANT DASHBOARD: View your mood trends through interactive charts.
-- WELLNESS STATUS: Get real-time feedback on your emotional rhythm.
-- CSV EXPORT: Securely export your data to a spreadsheet to share 
-  with health professionals or for your own records.
-- CRISIS SUPPORT: One-click access to York Region emergency resources.
+- MULTILINGUAL VOICE JOURNAL: Record your thoughts in English, French,
+  Spanish, Farsi, or Chinese using the "Record Thought" engine.
+
+- CRISIS DASHBOARD: A specialized navigator for York Region resources,
+  categorized by location (Richmond Hill, Markham, Vaughan, etc.) and
+  service type (Hospital, 360kids, Crisis Lines).
+
+- SMART RISK DETECTION: The "Pattern Detector" identifies downward
+  emotional trends, while the "Crisis Analyzer" monitors for high-risk
+  keywords to provide timely support prompts.
+
+- CLINICAL REPORTING: Generate a professional "Clinical Health Summary"
+  (PDF) for your doctor or export data to CSV for personal tracking.
+
+- GROUNDING MODULE: Access an interactive "Box Breathing" tool with
+  integrated motivational quotes to help manage moments of anxiety.
 
 ------------------------------------------------------------------------
-5. LOCAL YORK REGION SUPPORT
+5. LOCAL YORK REGION SUPPORT (EMERGENCY)
 ------------------------------------------------------------------------
 If you are in immediate need of help, please contact:
-- 310-COPE (York Region/South Simcoe Crisis Line): 1-855-310-2673
+- 310-COPE (York Region Crisis Line): 1-855-310-2673
 - Kids Help Phone: 1-800-668-6868 (or text CONNECT to 686868)
+- 360kids Support: 905-475-6694
 - York Region Mental Health Services: 1-866-345-0183
 - Suicide Crisis Helpline: 9-8-8
 - Connex Ontario: 1-866-531-2600
-- 360 kids: 905-475-6694
 
 ========================================================================
-Created with Care in Richmond Hill, Ontario.
-2025 by Nana Osei Nketiah.
+Created with Care in Richmond Hill, Ontario, Canada.
+© 2026 by Nana Osei Nketiah | Y-Rhythm App
+Used IntelliJ Community Edition + JavaFX, Maven + Google Gemini
 ========================================================================

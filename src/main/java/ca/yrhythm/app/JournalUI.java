@@ -27,7 +27,7 @@ public class JournalUI {
     private final String username;
     private final Stage stage;
 
-    public JournalUI(Stage stage, JournalService service, String username) {
+    public JournalUI(Stage stage, JournalService service, String username, boolean isDarkMode) {
         this.stage = stage;
         this.service = service;
         this.username = username;
@@ -36,11 +36,12 @@ public class JournalUI {
         DatePicker picker = new DatePicker(LocalDate.now());
         Button syncBtn = new Button("☁ Sync Cloud");
         syncBtn.setStyle("-fx-background-color: #0288d1; -fx-text-fill: white; -fx-background-radius: 20;");
+        syncBtn.setOnAction(e -> SyncService.syncToCloud(stage, username));
 
         HBox header = new HBox(15, new Label("History:"), picker, syncBtn);
         header.setPadding(new Insets(15));
         header.setAlignment(Pos.CENTER_LEFT);
-        header.setStyle("-fx-background-color: rgba(255,255,255,0.4); -fx-border-color: #a5d6a7; -fx-border-width: 0 0 2 0;");
+        header.setStyle("-fx-background-color: " + (isDarkMode ? "rgba(0,0,0,0.2)" : "rgba(255,255,255,0.4)") + "; -fx-border-color: #a5d6a7; -fx-border-width: 0 0 2 0;");
 
         // --- 2. CENTER ---
         setupTable();
@@ -78,6 +79,22 @@ public class JournalUI {
         contentArea.setStyle("-fx-font-family: 'Georgia', serif; -fx-font-size: 15px; -fx-padding: 15px;");
         contentArea.setPrefHeight(300);
 
+        contentArea.textProperty().addListener((observable, oldValue, newValue) -> {
+            if (newValue != null && newValue.endsWith(" ")) {
+                String input = newValue.toLowerCase();
+                boolean highStress = input.contains("hurt") || input.contains("alone") ||
+                        input.contains("end it") || input.contains("hopeless");
+
+                if (highStress) {
+                    root.setStyle("-fx-background-color: #e3f2fd;");
+                    riskLabel.setText("System Note: Taking deep breaths helps focus thoughts.");
+                    riskLabel.setStyle("-fx-text-fill: #1565c0; -fx-font-weight: bold;");
+                } else {
+                    refresh();
+                }
+            }
+        });
+
         Button saveBtn = new Button("Save Entry");
         saveBtn.setStyle("-fx-background-color: #2e7d32; -fx-text-fill: white; -fx-font-weight: bold; -fx-background-radius: 20;");
         saveBtn.setMaxWidth(Double.MAX_VALUE);
@@ -87,18 +104,27 @@ public class JournalUI {
 
         rightPanel.getChildren().addAll(new Label("New Entry"), moodBox, new Label("Language"), langPicker, recordBtn, contentArea, saveBtn, toolBox);
 
-        TabPane tabPane = new TabPane();
-        tabPane.getTabs().addAll(
-                new Tab("Journal Dashboard", centerContent),
-                new Tab("Crisis Dashboard", WellnessMapUI.getMapNode())
-        );
-        tabPane.getTabs().forEach(t -> t.setClosable(false));
-
-        root.setCenter(tabPane);
+        // TAB PANE REMOVED: Center is now just the dashboard content
+        root.setCenter(centerContent);
         root.setRight(rightPanel);
         root.setBottom(riskLabel);
 
+        applyGlobalTheme(isDarkMode);
         refresh();
+    }
+
+    private void applyGlobalTheme(boolean isDarkMode) {
+        if (isDarkMode) {
+            root.setStyle("-fx-background-color: #1e1e1e;");
+            contentArea.setStyle("-fx-control-inner-background: #2d2d2d; -fx-text-fill: white; -fx-font-family: 'Georgia';");
+            // Add further dark mode CSS logic here
+        }
+    }
+
+    // ... [createToolBox, handleSave, handleSpeech, etc. remain unchanged from previous logic] ...
+
+    public Node getContentNode() {
+        return this.root;
     }
 
     private VBox createToolBox() {
@@ -127,22 +153,10 @@ public class JournalUI {
         helpBtn.setStyle("-fx-background-color: #d32f2f; -fx-text-fill: white; -fx-font-weight: bold; -fx-background-radius: 20;");
         helpBtn.setOnAction(e -> new Alert(Alert.AlertType.INFORMATION, service.getCrisisResources()).show());
 
-        Button logoutBtn = new Button("Log Out");
-        logoutBtn.setMaxWidth(Double.MAX_VALUE);
-        logoutBtn.setStyle("-fx-background-color: #546e7a; -fx-text-fill: white; -fx-background-radius: 20;");
-        logoutBtn.setOnAction(e -> {
-            SpeechService.stopListening();
-            new LoginUI(stage);
-        });
-
-        VBox toolBox = new VBox(10, new Label("Clinical & Data Tools"), promptBtn, docReportBtn, exportBtn, deleteBtn, helpBtn, new Separator(), logoutBtn);
+        VBox toolBox = new VBox(10, new Label("Clinical & Data Tools"), promptBtn, docReportBtn, exportBtn, deleteBtn, helpBtn);
         toolBox.setPadding(new Insets(10));
         toolBox.setStyle("-fx-background-color: rgba(255,255,255,0.6); -fx-background-radius: 10;");
         return toolBox;
-    }
-
-    public Node getContentNode() {
-        return this.root;
     }
 
     private void setupTable() {
@@ -155,10 +169,7 @@ public class JournalUI {
         TableColumn<JournalEntry, String> cCol = new TableColumn<>("Notes Summary");
         cCol.setCellValueFactory(new PropertyValueFactory<>("content"));
 
-        // This ensures the generic types are handled correctly for the column list
         table.getColumns().setAll(List.of(dCol, mCol, cCol));
-
-        // Use this policy for compatibility with JavaFX 11, 17, and 21+
         table.setColumnResizePolicy(TableView.CONSTRAINED_RESIZE_POLICY);
     }
 
@@ -247,6 +258,7 @@ public class JournalUI {
             table.setItems(FXCollections.observableArrayList(entries));
             int score = service.getCurrentRiskScore();
             riskLabel.setText("Health Rhythm: " + service.getRiskTier() + " (" + score + "/100)");
+            riskLabel.setStyle("-fx-text-fill: #34495e;");
             if (score >= 100) Platform.runLater(this::triggerEmergencyHandshake);
             updateChart(entries);
             updateVisuals(entries);
