@@ -5,12 +5,33 @@ import java.time.LocalDate;
 import java.util.*;
 import java.util.stream.Collectors;
 
+/**
+ * EntryRepository — defines the data-access contract.
+ *
+ * Previously a standalone interface file. Merged here to reduce file count;
+ * the interface is still public so other implementations (e.g. SQLDelight on KMP)
+ * can implement it via: implements FileEntryRepository.EntryRepository
+ *
+ * For the JavaFX desktop build, FileEntryRepository is the sole implementation.
+ */
+interface EntryRepository {
+    void save(JournalEntry entry) throws Exception;
+    void update(JournalEntry entry) throws Exception;
+    void delete(int id) throws Exception;
+    List<JournalEntry> findAll() throws Exception;
+    List<JournalEntry> searchByDate(LocalDate date) throws Exception;
+}
+
+/**
+ * FileEntryRepository — AES-GCM encrypted flat-file implementation of EntryRepository.
+ * Each line is independently encrypted so one corrupted entry doesn't break the whole file.
+ */
 public class FileEntryRepository implements EntryRepository {
-    private final File file;
+    private final File   file;
     private final char[] password;
 
     public FileEntryRepository(String username, char[] password) {
-        this.file = new File(username + "_journal.txt");
+        this.file     = new File(username + "_journal.txt");
         this.password = password;
     }
 
@@ -42,14 +63,6 @@ public class FileEntryRepository implements EntryRepository {
         rewriteFile(filtered);
     }
 
-    private void rewriteFile(List<JournalEntry> entries) throws Exception {
-        try (FileWriter writer = new FileWriter(file, false)) {
-            for (JournalEntry e : entries) {
-                writer.write(CryptoUtils.encrypt(e.toFileFormat(), password) + "\n");
-            }
-        }
-    }
-
     @Override
     public List<JournalEntry> findAll() throws Exception {
         List<JournalEntry> entries = new ArrayList<>();
@@ -59,11 +72,10 @@ public class FileEntryRepository implements EntryRepository {
             String line;
             while ((line = reader.readLine()) != null) {
                 try {
-                    // DECRYPTION FIX: Skip lines that cause Tag Mismatch (wrong password/corruption)
                     String decrypted = CryptoUtils.decrypt(line, password);
                     entries.add(JournalEntry.fromFileFormat(decrypted));
                 } catch (javax.crypto.AEADBadTagException e) {
-                    System.err.println("Integrity check failed for an entry (Tag Mismatch). Skipping row.");
+                    System.err.println("Integrity check failed for an entry — skipping row.");
                 } catch (Exception e) {
                     System.err.println("Error parsing entry: " + e.getMessage());
                 }
@@ -77,5 +89,13 @@ public class FileEntryRepository implements EntryRepository {
         return findAll().stream()
                 .filter(e -> e.getDate().equals(date))
                 .collect(Collectors.toList());
+    }
+
+    private void rewriteFile(List<JournalEntry> entries) throws Exception {
+        try (FileWriter writer = new FileWriter(file, false)) {
+            for (JournalEntry e : entries) {
+                writer.write(CryptoUtils.encrypt(e.toFileFormat(), password) + "\n");
+            }
+        }
     }
 }

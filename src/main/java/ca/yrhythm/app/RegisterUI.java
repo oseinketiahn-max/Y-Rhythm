@@ -40,31 +40,32 @@ public class RegisterUI {
         backBtn.setStyle("-fx-background-color: transparent; -fx-text-fill: #558b2f; -fx-cursor: hand;");
 
         regBtn.setOnAction(e -> {
-            String username = userField.getText().trim();
-            String password = passField.getText();
+                    String username = userField.getText().trim();
+                    String password = passField.getText();
 
-            if (username.isEmpty()) {
-                new Alert(Alert.AlertType.ERROR, "Username cannot be empty").show();
-                return;
-            }
-            if (!password.equals(confirmField.getText())) {
-                new Alert(Alert.AlertType.ERROR, "Passwords do not match").show();
-                return;
-            }
+                    if (username.isEmpty()) {
+                        new Alert(Alert.AlertType.ERROR, "Username cannot be empty").show();
+                        return;
+                    }
+                    if (!password.equals(confirmField.getText())) {
+                        new Alert(Alert.AlertType.ERROR, "Passwords do not match").show();
+                        return;
+                    }
 
-            try {
-                // This creates the initial encrypted journal file for the user
-                // Using a dummy entry to initialize the repository
-                FileEntryRepository repo = new FileEntryRepository(username, password.toCharArray());
-                repo.save(new JournalEntry(0, java.time.LocalDate.now(), Mood.NEUTRAL, "Welcome to Y-Rhythm!"));
+                    // Inside RegisterUI regBtn.setOnAction...
+                    try {
+                        FileEntryRepository repo = new FileEntryRepository(username, password.toCharArray());
 
-                Alert success = new Alert(Alert.AlertType.INFORMATION, "Account successfully saved! You can now log in.");
-                success.showAndWait();
-                new LoginUI(stage);
-            } catch (Exception ex) {
-                new Alert(Alert.AlertType.ERROR, "Could not create account: " + ex.getMessage()).show();
-            }
-        });
+                        // UPDATED: Now passes 'username' to match the new 5-argument constructor requirement
+                        repo.save(new JournalEntry(0, username, java.time.LocalDate.now(), Mood.NEUTRAL, "Welcome to Y-Rhythm!"));
+
+                        Alert success = new Alert(Alert.AlertType.INFORMATION, "Account successfully saved! You can now log in.");
+                        success.showAndWait();
+                        new LoginUI(stage);
+                    } catch (Exception ex) {
+                        new Alert(Alert.AlertType.ERROR, "Could not create account: " + ex.getMessage()).show();
+                    }
+                });
 
         backBtn.setOnAction(e -> new LoginUI(stage));
 

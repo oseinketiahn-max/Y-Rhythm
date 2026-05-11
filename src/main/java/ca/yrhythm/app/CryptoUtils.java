@@ -22,7 +22,7 @@ public class CryptoUtils {
         Cipher cipher = Cipher.getInstance("AES/GCM/NoPadding");
         cipher.init(Cipher.ENCRYPT_MODE, key, new GCMParameterSpec(128, iv));
 
-        // FIX: Explicitly use UTF_8 to preserve physics symbols
+        // UTF_8 ensures that complex symbols (like chemistry/physics notation) are preserved
         byte[] encrypted = cipher.doFinal(text.getBytes(StandardCharsets.UTF_8));
 
         byte[] combined = new byte[salt.length + iv.length + encrypted.length];
@@ -46,7 +46,6 @@ public class CryptoUtils {
         Cipher cipher = Cipher.getInstance("AES/GCM/NoPadding");
         cipher.init(Cipher.DECRYPT_MODE, key, new GCMParameterSpec(128, iv));
 
-        // FIX: Explicitly use UTF_8 when converting bytes back to String
         return new String(cipher.doFinal(cipherText), StandardCharsets.UTF_8);
     }
 }

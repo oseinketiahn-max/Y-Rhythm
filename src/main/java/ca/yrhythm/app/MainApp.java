@@ -21,6 +21,9 @@ public class MainApp extends Application {
             System.out.println("Note: Custom app icon not found, using system default.");
         }
 
+        // Make HostServices available for opening browser links (Google Maps, etc.)
+        WellnessMapUI.setHostServices(getHostServices());
+
         // Launch the Login UI
         // Transition to MainDashboardUI should happen inside LoginUI upon success
         new LoginUI(primaryStage);

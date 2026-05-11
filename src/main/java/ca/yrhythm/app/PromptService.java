@@ -85,7 +85,10 @@ public class PromptService {
 
             case SAD, VERY_SAD, DEPRESSED -> SAD_DEPRESSED_PROMPTS[random.nextInt(SAD_DEPRESSED_PROMPTS.length)];
 
-            case SUICIDAL -> CRISIS_PROMPTS[random.nextInt(CRISIS_PROMPTS.length)];
+            case OVERWHELMED, HOPELESS -> CRISIS_PROMPTS[random.nextInt(CRISIS_PROMPTS.length)];
+
+            //final fallback
+            default -> "How are you feeling in this moment?";
         };
     }
 
