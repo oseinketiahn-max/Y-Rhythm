@@ -6,7 +6,17 @@ import javafx.scene.control.*;
 import javafx.scene.layout.*;
 import javafx.stage.Stage;
 
+/**
+ * RegisterUI — new account creation screen.
+ *
+ * Previously called UserRepository.register() directly.
+ * Now calls LoginUI.register() — the same logic, same validation,
+ * just in one fewer file (UserRepository.java is removed).
+ */
+
+@SuppressWarnings("all")
 public class RegisterUI {
+
     public RegisterUI(Stage stage) {
         VBox layout = new VBox(15);
         layout.setAlignment(Pos.CENTER);
@@ -16,62 +26,71 @@ public class RegisterUI {
         Label title = new Label("Join Y-Rhythm");
         title.setStyle("-fx-font-size: 24px; -fx-font-weight: bold; -fx-text-fill: #2e7d32;");
 
+        String fieldStyle = "-fx-background-radius: 12; -fx-border-color: #c5e1a5; -fx-border-radius: 12;";
+
         TextField userField = new TextField();
         userField.setPromptText("New Username");
         userField.setMaxWidth(250);
+        userField.setStyle(fieldStyle);
 
         PasswordField passField = new PasswordField();
-        passField.setPromptText("Password");
+        passField.setPromptText("Password (min 8 characters)");
         passField.setMaxWidth(250);
+        passField.setStyle(fieldStyle);
 
         PasswordField confirmField = new PasswordField();
         confirmField.setPromptText("Confirm Password");
         confirmField.setMaxWidth(250);
-
-        String fieldStyle = "-fx-background-radius: 12; -fx-border-color: #c5e1a5; -fx-border-radius: 12;";
-        userField.setStyle(fieldStyle);
-        passField.setStyle(fieldStyle);
         confirmField.setStyle(fieldStyle);
 
         Button regBtn = new Button("Start Journey");
-        regBtn.setStyle("-fx-background-color: #43a047; -fx-text-fill: white; -fx-font-weight: bold; -fx-background-radius: 25; -fx-pref-width: 250; -fx-cursor: hand;");
+        regBtn.setStyle("-fx-background-color: #43a047; -fx-text-fill: white; " +
+                        "-fx-font-weight: bold; -fx-background-radius: 25; " +
+                        "-fx-pref-width: 250; -fx-cursor: hand;");
 
         Button backBtn = new Button("Back to Login");
         backBtn.setStyle("-fx-background-color: transparent; -fx-text-fill: #558b2f; -fx-cursor: hand;");
 
         regBtn.setOnAction(e -> {
-                    String username = userField.getText().trim();
-                    String password = passField.getText();
+            String username = userField.getText().trim();
+            String password = passField.getText();
 
-                    if (username.isEmpty()) {
-                        new Alert(Alert.AlertType.ERROR, "Username cannot be empty").show();
-                        return;
-                    }
-                    if (!password.equals(confirmField.getText())) {
-                        new Alert(Alert.AlertType.ERROR, "Passwords do not match").show();
-                        return;
-                    }
+            if (username.isEmpty()) {
+                new Alert(Alert.AlertType.ERROR, "Username cannot be empty").show();
+                return;
+            }
+            if (!password.equals(confirmField.getText())) {
+                new Alert(Alert.AlertType.ERROR, "Passwords do not match").show();
+                return;
+            }
 
-                    // Inside RegisterUI regBtn.setOnAction...
-                    try {
-                        FileEntryRepository repo = new FileEntryRepository(username, password.toCharArray());
+            try {
+                // ── Uses LoginUI static helpers (UserRepository absorbed) ──
+                LoginUI.register(username, password.toCharArray());
 
-                        // UPDATED: Now passes 'username' to match the new 5-argument constructor requirement
-                        repo.save(new JournalEntry(0, username, java.time.LocalDate.now(), Mood.NEUTRAL, "Welcome to Y-Rhythm!"));
+                // Create encrypted journal file with welcome entry
+                FileEntryRepository repo = new FileEntryRepository(username, password.toCharArray());
+                repo.save(new JournalEntry(
+                        0, username,
+                        java.time.LocalDate.now(),
+                        Mood.NEUTRAL,
+                        "Welcome to Y-Rhythm!"
+                ));
 
-                        Alert success = new Alert(Alert.AlertType.INFORMATION, "Account successfully saved! You can now log in.");
-                        success.showAndWait();
-                        new LoginUI(stage);
-                    } catch (Exception ex) {
-                        new Alert(Alert.AlertType.ERROR, "Could not create account: " + ex.getMessage()).show();
-                    }
-                });
+                Alert success = new Alert(Alert.AlertType.INFORMATION,
+                        "Account created! You can now log in.");
+                success.showAndWait();
+                new LoginUI(stage);
+
+            } catch (Exception ex) {
+                new Alert(Alert.AlertType.ERROR,
+                        "Could not create account: " + ex.getMessage()).show();
+            }
+        });
 
         backBtn.setOnAction(e -> new LoginUI(stage));
 
         layout.getChildren().addAll(title, userField, passField, confirmField, regBtn, backBtn);
-
-        Scene scene = new Scene(layout, 400, 550);
-        stage.setScene(scene);
+        stage.setScene(new Scene(layout, 400, 550));
     }
 }

@@ -3,43 +3,78 @@ package ca.yrhythm.app;
 import java.util.regex.Pattern;
 
 /**
- * Security utility to sanitize and validate user input.
- * Prevents Cross-Site Scripting (XSS) and Denial of Service (DoS) attacks.
+ * InputValidator — security utility to sanitise and validate user input.
+ *
+ * Changes this session:
+ *   • Added isSafeUsername() — blocks path traversal and injection characters
+ *     Required by DebugSandbox SEC 5 and SEC 6.
+ *
+ * Existing methods (sanitize, isValidSize, isBlank) unchanged.
  */
+
+@SuppressWarnings("all")
 public class InputValidator {
 
-    // Max allowed characters for a single journal entry (e.g., 1MB roughly)
+    /** Max characters for a single journal entry (~1 MB). */
     private static final int MAX_TEXT_LENGTH = 1_000_000;
 
-    // Basic regex to identify common HTML/Script tags
+    /** HTML / script tag pattern. */
     private static final Pattern HTML_TAG_PATTERN = Pattern.compile("<[^>]*>");
 
     /**
-     * SEC 3: Removes HTML tags and potential script injections.
-     * Replaces brackets to neutralize tags without deleting the content inside.
+     * Allowed username pattern: 3–40 alphanumeric chars, underscores, hyphens.
+     * Blocks: path separators (/ \\ ..), shell metacharacters (: ; | \n \r),
+     * empty strings, and names that start with a dot or hyphen.
+     */
+    private static final Pattern SAFE_USERNAME =
+            Pattern.compile("^[a-zA-Z0-9][a-zA-Z0-9_\\-]{2,39}$");
+
+    // ── SEC 3: HTML / XSS sanitisation ───────────────────────────────────────
+
+    /**
+     * Removes HTML tags and neutralises angle brackets so injected script tags
+     * cannot execute if content is ever rendered in a web context.
      */
     public static String sanitize(String input) {
         if (input == null) return "";
-
-        // Remove literal script tags and other dangerous HTML
         String sanitized = HTML_TAG_PATTERN.matcher(input).replaceAll("");
-
-        // Neutralize remaining brackets just in case
         return sanitized.replace("<", "&lt;").replace(">", "&gt;");
     }
 
+    // ── SEC 4: DoS size guard ─────────────────────────────────────────────────
+
     /**
-     * SEC 4: Checks if the input size is within safe operational limits.
-     * Prevents memory exhaustion attacks (DoS).
+     * Returns true only if the input is within safe operational limits.
+     * Rejects anything over 1 MB to prevent memory exhaustion.
      */
     public static boolean isValidSize(String input) {
         if (input == null) return true;
         return input.length() <= MAX_TEXT_LENGTH;
     }
 
+    // ── SEC 5 & SEC 6: Username safety ───────────────────────────────────────
+
     /**
-     * Utility to check for empty or whitespace-only strings.
+     * Returns true only if the username is safe for use as part of a filename
+     * and cannot be used for path traversal or shell/CSV injection.
+     *
+     * Blocks:
+     *   • Path traversal:  ../  ..\  /root  ../../etc/passwd
+     *   • Shell chars:     ; | & $ ` ~ ! # % ^ * ( ) { } [ ] < > ? \
+     *   • File format:     : (field separator in users.txt)
+     *   • Whitespace:      spaces, newlines, tabs
+     *   • Empty strings and single-char names
+     *
+     * Allows: letters, digits, underscore, hyphen (min 3 chars, max 40).
      */
+    public static boolean isSafeUsername(String username) {
+        if (username == null || username.isBlank()) return false;
+        return SAFE_USERNAME.matcher(username).matches();
+    }
+
+    // ── Utility ───────────────────────────────────────────────────────────────
+
+    /** Returns true if the input is null or whitespace only. */
     public static boolean isBlank(String input) {
         return input == null || input.trim().isEmpty();
     }

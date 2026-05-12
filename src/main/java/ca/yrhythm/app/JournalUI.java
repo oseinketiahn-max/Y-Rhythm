@@ -1,5 +1,6 @@
 package ca.yrhythm.app;
 
+import ca.yrhythm.app.JournalService.RiskTier;
 import javafx.animation.TranslateTransition;
 import javafx.application.Platform;
 import javafx.collections.FXCollections;
@@ -18,6 +19,7 @@ import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
+@SuppressWarnings("all")
 public class JournalUI {
     private static final Logger LOGGER = Logger.getLogger(JournalUI.class.getName());
 
@@ -298,7 +300,7 @@ public class JournalUI {
 
     private void handleExportCSV() {
         try {
-            ReportService.exportCSV(service.getAllEntries(), username + "_data.csv");
+            ExportService.exportCSV(service.getAllEntries(), username + "_data.csv");
             new Alert(Alert.AlertType.INFORMATION, "Data exported successfully.").show();
         } catch (Exception e) { LOGGER.log(Level.WARNING, "CSV export failed", e); }
     }
@@ -306,7 +308,7 @@ public class JournalUI {
     private void handleExportPDF() {
         try {
             String fileName = username + "_Clinical_Report.pdf";
-            ReportService.generateDoctorReport(service.getAllEntries(), fileName);
+            ExportService.generateDoctorReport(service.getAllEntries(), fileName);
             new Alert(Alert.AlertType.INFORMATION, "PDF Created: " + fileName).show();
         } catch (Exception e) { LOGGER.log(Level.WARNING, "PDF report failed", e); }
     }

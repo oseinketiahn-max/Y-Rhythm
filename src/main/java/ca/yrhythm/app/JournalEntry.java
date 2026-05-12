@@ -2,6 +2,7 @@ package ca.yrhythm.app;
 
 import java.time.LocalDate;
 
+@SuppressWarnings("all")
 public class JournalEntry {
     private int id;
     private String username;

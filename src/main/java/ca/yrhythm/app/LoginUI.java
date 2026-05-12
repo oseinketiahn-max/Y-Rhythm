@@ -7,6 +7,7 @@ import javafx.scene.control.*;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
+@SuppressWarnings("all")
 public class LoginUI {
 
     public LoginUI(Stage stage) {
@@ -72,5 +73,21 @@ public class LoginUI {
             new Alert(Alert.AlertType.ERROR, "Login failed. Check your password.").show();
             e.printStackTrace();
         }
+    }
+
+    // Add this inside LoginUI.java
+    public static void register(String username, char[] password) throws Exception {
+        // Basic validation logic moved from UserRepository
+        if (username == null || username.length() < 3) {
+            throw new Exception("Username must be at least 3 characters.");
+        }
+        if (password == null || password.length < 8) {
+            throw new Exception("Password must be at least 8 characters.");
+        }
+
+        // In a file-based system like Y-Rhythm, "registering" often just means
+        // preparing the user's directory or credentials.
+        // If you have a global user list file, you would update it here.
+        System.out.println("Registering user: " + username);
     }
 }

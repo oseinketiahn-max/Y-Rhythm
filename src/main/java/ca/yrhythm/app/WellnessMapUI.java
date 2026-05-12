@@ -31,6 +31,8 @@ import java.util.stream.Collectors;
  * Offline: all bundled data works without internet.
  * Online : Google Maps search for real-time nearby results.
  */
+
+@SuppressWarnings("all")
 public class WellnessMapUI {
 
     private static HostServices hostServices;

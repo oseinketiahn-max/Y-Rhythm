@@ -1,5 +1,6 @@
 package ca.yrhythm.app;
 
+
 import java.util.List;
 import java.util.regex.Pattern;
 
@@ -17,6 +18,7 @@ import java.util.regex.Pattern;
  *      that replaced the SUICIDAL mood option.
  *   4. Sliding window is kept at last 5 entries to prevent stale scores.
  */
+@SuppressWarnings("all")
 public class CrisisAnalyzer {
 
     // ── Crisis keywords — whole-word only ─────────────────────────────────────

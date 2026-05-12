@@ -9,13 +9,29 @@ import java.util.stream.Collectors;
 /**
  * JournalService — core business logic for journaling.
  *
- * Absorbs:
- *   • EntrySorter  (sortByDate — one-method utility, belongs here)
- *   • MoodAnalytics (calculateAverage — called only from JournalUI via service)
+ * Absorbs (no new files, no removed features):
+ *   • EntrySorter      → sortByDate()
+ *   • MoodAnalytics    → calculateAverageMoodIntensity()
+ *   • PatternDetector  → downwardTrend()   ← merged this session
+ *   • RiskTier enum    → inner enum        ← merged this session
+ *     (RiskTier was a 5-line enum used only by JournalService/JournalUI;
+ *      keeping it as a top-level file added zero value)
  */
+@SuppressWarnings("all")
 public class JournalService {
+
+    // ── RiskTier (absorbed from RiskTier.java) ────────────────────────────────
+    /**
+     * Unified risk classification used by getRiskTier() and JournalUI.refresh().
+     * Formerly RiskTier.java — moved here since it is a pure output type of
+     * this service and has no other consumers.
+     */
+    public enum RiskTier { NONE, NORMAL, LOW, MODERATE, HIGH }
+
+    // ── Fields ────────────────────────────────────────────────────────────────
+
     private final EntryRepository repository;
-    private final CrisisAnalyzer analyzer = new CrisisAnalyzer();
+    private final CrisisAnalyzer  analyzer = new CrisisAnalyzer();
 
     public JournalService(EntryRepository repository) {
         this.repository = repository;
@@ -79,10 +95,7 @@ public class JournalService {
 
     // ── Sorting (absorbed from EntrySorter) ──────────────────────────────────
 
-    /**
-     * Sorts entries ascending by date in-place.
-     * Previously in EntrySorter.java — moved here as it's a service-level concern.
-     */
+    /** Sorts entries ascending by date in-place. */
     public static void sortByDate(List<JournalEntry> entries) {
         Collections.sort(entries, Comparator.comparing(JournalEntry::getDate));
     }
@@ -91,19 +104,39 @@ public class JournalService {
 
     /**
      * Returns the average mood intensity across all entries (0–5 scale).
-     * Previously in MoodAnalytics.java — moved here to reduce class sprawl.
      */
     public double calculateAverageMoodIntensity(List<JournalEntry> entries) {
         if (entries == null || entries.isEmpty()) return 0.0;
-
         List<JournalEntry> valid = entries.stream()
                 .filter(e -> e != null && e.getMood() != null)
                 .collect(Collectors.toList());
-
         if (valid.isEmpty()) return 0.0;
-
         int sum = 0;
         for (JournalEntry e : valid) sum += e.getMood().getIntensity();
         return (double) sum / valid.size();
+    }
+
+    // ── Pattern detection (absorbed from PatternDetector.java) ────────────────
+
+    /**
+     * Detects a downward trend in mood intensity.
+     *
+     * Algorithm: if more than 50% of consecutive transitions are declining,
+     * the trend is downward. Works for as few as 2 entries (1/1 = 100%).
+     *
+     * Previously in PatternDetector.java — moved here because it has no state,
+     * no external callers, and operates entirely on JournalEntry data.
+     * DebugSandbox test retained; call journalService.downwardTrend(entries).
+     */
+    public boolean downwardTrend(List<JournalEntry> entries) {
+        if (entries == null || entries.size() < 2) return false;
+        int declineCount = 0;
+        for (int i = 1; i < entries.size(); i++) {
+            int prev = entries.get(i - 1).getMood().getIntensity();
+            int curr = entries.get(i).getMood().getIntensity();
+            if (curr < prev) declineCount++;
+        }
+        double ratio = (double) declineCount / (entries.size() - 1);
+        return ratio >= 0.5;
     }
 }

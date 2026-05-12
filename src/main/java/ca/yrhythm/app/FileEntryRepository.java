@@ -14,6 +14,7 @@ import java.util.stream.Collectors;
  *
  * For the JavaFX desktop build, FileEntryRepository is the sole implementation.
  */
+@SuppressWarnings("all")
 interface EntryRepository {
     void save(JournalEntry entry) throws Exception;
     void update(JournalEntry entry) throws Exception;
@@ -26,6 +27,7 @@ interface EntryRepository {
  * FileEntryRepository — AES-GCM encrypted flat-file implementation of EntryRepository.
  * Each line is independently encrypted so one corrupted entry doesn't break the whole file.
  */
+@SuppressWarnings("all")
 public class FileEntryRepository implements EntryRepository {
     private final File   file;
     private final char[] password;

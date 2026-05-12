@@ -10,6 +10,8 @@ package ca.yrhythm.app;
  *
  * Crisis response on OVERWHELMED + keyword combination is handled in CrisisAnalyzer.
  */
+
+@SuppressWarnings("all")
 public enum Mood {
 
     // ── Positive ─────────────────────────────────────────────────────────────

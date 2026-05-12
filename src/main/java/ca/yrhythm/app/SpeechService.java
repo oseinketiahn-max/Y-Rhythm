@@ -8,6 +8,7 @@ import java.io.IOException;
 import java.nio.file.Paths;
 import java.util.function.Consumer;
 
+@SuppressWarnings("all")
 public class SpeechService {
     private static Model currentModel;
     private static String currentLangPath = "";

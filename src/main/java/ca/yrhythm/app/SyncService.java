@@ -7,6 +7,7 @@ import javafx.stage.DirectoryChooser;
 import javafx.stage.Stage;
 import javafx.scene.control.Alert;
 
+@SuppressWarnings("all")
 public class SyncService {
     public static void syncToCloud(Stage stage, String username) {
         File localFile = new File(username + "_journal.txt");

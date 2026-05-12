@@ -1,0 +1,3902 @@
+[
+  {
+    "name": "Suicide Crisis Helpline",
+    "address": "Canada-wide",
+    "phone": "9-8-8",
+    "type": "CRISIS",
+    "cities": [
+      "ALL"
+    ],
+    "province": "NATIONAL",
+    "tags": [
+      "24/7"
+    ]
+  },
+  {
+    "name": "Kids Help Phone",
+    "address": "Canada-wide | Text CONNECT to 686868",
+    "phone": "1-800-668-6868",
+    "type": "YOUTH",
+    "cities": [
+      "ALL"
+    ],
+    "province": "NATIONAL",
+    "tags": [
+      "24/7",
+      "youth"
+    ]
+  },
+  {
+    "name": "Crisis Services Canada",
+    "address": "Canada-wide",
+    "phone": "1-833-456-4566",
+    "type": "CRISIS",
+    "cities": [
+      "ALL"
+    ],
+    "province": "NATIONAL",
+    "tags": [
+      "24/7"
+    ]
+  },
+  {
+    "name": "Trans Lifeline",
+    "address": "Canada-wide",
+    "phone": "1-877-330-6366",
+    "type": "LGBTQ",
+    "cities": [
+      "ALL"
+    ],
+    "province": "NATIONAL",
+    "tags": [
+      "24/7",
+      "trans"
+    ]
+  },
+  {
+    "name": "Hope for Wellness (Indigenous)",
+    "address": "Canada-wide",
+    "phone": "1-855-242-4310",
+    "type": "INDIGENOUS",
+    "cities": [
+      "ALL"
+    ],
+    "province": "NATIONAL",
+    "tags": [
+      "24/7",
+      "indigenous"
+    ]
+  },
+  {
+    "name": "Assaulted Women's Helpline",
+    "address": "Canada-wide | TTY: 1-866-863-7868",
+    "phone": "1-866-863-0511",
+    "type": "WOMEN",
+    "cities": [
+      "ALL"
+    ],
+    "province": "NATIONAL",
+    "tags": [
+      "24/7",
+      "women"
+    ]
+  },
+  {
+    "name": "Distress Centres of Canada",
+    "address": "Canada-wide",
+    "phone": "1-800-268-9688",
+    "type": "CRISIS",
+    "cities": [
+      "ALL"
+    ],
+    "province": "NATIONAL",
+    "tags": [
+      "24/7"
+    ]
+  },
+  {
+    "name": "Canadian Mental Health Association",
+    "address": "cmha.ca",
+    "phone": "1-833-456-4566",
+    "type": "MENTAL_HEALTH",
+    "cities": [
+      "ALL"
+    ],
+    "province": "NATIONAL",
+    "tags": []
+  },
+  {
+    "name": "310-COPE Crisis Line (York/Simcoe)",
+    "address": "York Region & South Simcoe",
+    "phone": "1-855-310-2673",
+    "type": "CRISIS",
+    "cities": [
+      "Newmarket",
+      "Aurora",
+      "Richmond Hill",
+      "Vaughan",
+      "Markham",
+      "Stouffville",
+      "Georgina",
+      "Keswick",
+      "Barrie",
+      "Bradford",
+      "Innisfil",
+      "East Gwillimbury",
+      "King City",
+      "Nobleton",
+      "Schomberg",
+      "Sutton",
+      "Ballantrae",
+      "Gormley",
+      "Vandorf"
+    ],
+    "province": "ON",
+    "tags": [
+      "24/7"
+    ]
+  },
+  {
+    "name": "CMHA York Region",
+    "address": "1101 Nicholson Rd, Newmarket",
+    "phone": "1-866-345-0183",
+    "type": "MENTAL_HEALTH",
+    "cities": [
+      "Newmarket",
+      "Aurora",
+      "Stouffville",
+      "Richmond Hill"
+    ],
+    "province": "ON",
+    "tags": []
+  },
+  {
+    "name": "Southlake Regional Health Centre",
+    "address": "596 Davis Dr, Newmarket",
+    "phone": "905-895-4521",
+    "type": "HOSPITAL",
+    "cities": [
+      "Newmarket",
+      "Aurora",
+      "East Gwillimbury",
+      "Bradford",
+      "Keswick"
+    ],
+    "province": "ON",
+    "tags": []
+  },
+  {
+    "name": "Mackenzie Health (Vaughan)",
+    "address": "9401 Jane St, Vaughan",
+    "phone": "905-832-0770",
+    "type": "HOSPITAL",
+    "cities": [
+      "Vaughan",
+      "Woodbridge",
+      "Maple",
+      "Kleinburg",
+      "Nobleton"
+    ],
+    "province": "ON",
+    "tags": []
+  },
+  {
+    "name": "Mackenzie Health (Richmond Hill)",
+    "address": "10 Trench St, Richmond Hill",
+    "phone": "905-883-1212",
+    "type": "HOSPITAL",
+    "cities": [
+      "Richmond Hill",
+      "Thornhill"
+    ],
+    "province": "ON",
+    "tags": []
+  },
+  {
+    "name": "Markham Stouffville Hospital",
+    "address": "381 Church St, Markham",
+    "phone": "905-472-7000",
+    "type": "HOSPITAL",
+    "cities": [
+      "Markham",
+      "Stouffville",
+      "Unionville",
+      "Milliken",
+      "Agincourt"
+    ],
+    "province": "ON",
+    "tags": []
+  },
+  {
+    "name": "Blue Door Shelters",
+    "address": "East Gwillimbury & Newmarket",
+    "phone": "905-953-0770",
+    "type": "SHELTER",
+    "cities": [
+      "Newmarket",
+      "East Gwillimbury",
+      "Aurora"
+    ],
+    "province": "ON",
+    "tags": []
+  },
+  {
+    "name": "Sandgate Women's Shelter",
+    "address": "Georgina",
+    "phone": "1-800-661-8294",
+    "type": "WOMEN",
+    "cities": [
+      "Georgina",
+      "Keswick",
+      "Sutton",
+      "Jackson's Point"
+    ],
+    "province": "ON",
+    "tags": [
+      "24/7"
+    ]
+  },
+  {
+    "name": "Victim Services York Region",
+    "address": "York Region",
+    "phone": "905-953-5363",
+    "type": "CRISIS",
+    "cities": [
+      "Newmarket",
+      "Richmond Hill",
+      "Vaughan",
+      "Markham",
+      "Aurora"
+    ],
+    "province": "ON",
+    "tags": []
+  },
+  {
+    "name": "Family Services York Region",
+    "address": "60 Prospect St, Newmarket",
+    "phone": "905-895-2702",
+    "type": "MENTAL_HEALTH",
+    "cities": [
+      "Newmarket",
+      "Aurora",
+      "Markham",
+      "Vaughan",
+      "Richmond Hill",
+      "Stouffville"
+    ],
+    "province": "ON",
+    "tags": []
+  },
+  {
+    "name": "Vaughan Community Health Centre",
+    "address": "9401 Jane St, Vaughan",
+    "phone": "905-303-8490",
+    "type": "MENTAL_HEALTH",
+    "cities": [
+      "Vaughan",
+      "Woodbridge",
+      "Maple",
+      "Concord"
+    ],
+    "province": "ON",
+    "tags": []
+  },
+  {
+    "name": "360 Kids",
+    "address": "Newmarket/Richmond Hill",
+    "phone": "905-475-6694",
+    "type": "YOUTH",
+    "cities": [
+      "Newmarket",
+      "Richmond Hill",
+      "Markham",
+      "Aurora"
+    ],
+    "province": "ON",
+    "tags": []
+  },
+  {
+    "name": "CAMH Crisis Line (Toronto)",
+    "address": "1001 Queen St W, Toronto",
+    "phone": "416-535-8501",
+    "type": "CRISIS",
+    "cities": [
+      "Toronto",
+      "Etobicoke",
+      "Scarborough",
+      "North York",
+      "East York",
+      "York"
+    ],
+    "province": "ON",
+    "tags": [
+      "24/7"
+    ]
+  },
+  {
+    "name": "Toronto Distress Centre",
+    "address": "Toronto",
+    "phone": "416-408-4357",
+    "type": "CRISIS",
+    "cities": [
+      "Toronto",
+      "North York",
+      "Scarborough",
+      "Etobicoke"
+    ],
+    "province": "ON",
+    "tags": [
+      "24/7"
+    ]
+  },
+  {
+    "name": "Toronto General Hospital",
+    "address": "200 Elizabeth St, Toronto",
+    "phone": "416-340-3111",
+    "type": "HOSPITAL",
+    "cities": [
+      "Toronto",
+      "Downtown Toronto"
+    ],
+    "province": "ON",
+    "tags": []
+  },
+  {
+    "name": "St. Michael's Hospital",
+    "address": "30 Bond St, Toronto",
+    "phone": "416-360-4000",
+    "type": "HOSPITAL",
+    "cities": [
+      "Toronto",
+      "Downtown Toronto"
+    ],
+    "province": "ON",
+    "tags": []
+  },
+  {
+    "name": "SickKids Hospital",
+    "address": "555 University Ave, Toronto",
+    "phone": "416-813-1500",
+    "type": "HOSPITAL",
+    "cities": [
+      "Toronto"
+    ],
+    "province": "ON",
+    "tags": [
+      "youth",
+      "children"
+    ]
+  },
+  {
+    "name": "Women's College Hospital",
+    "address": "76 Grenville St, Toronto",
+    "phone": "416-323-6400",
+    "type": "HOSPITAL",
+    "cities": [
+      "Toronto"
+    ],
+    "province": "ON",
+    "tags": [
+      "women"
+    ]
+  },
+  {
+    "name": "Sunnybrook Health Sciences",
+    "address": "2075 Bayview Ave, Toronto",
+    "phone": "416-480-6100",
+    "type": "HOSPITAL",
+    "cities": [
+      "Toronto",
+      "North York",
+      "Thornhill"
+    ],
+    "province": "ON",
+    "tags": []
+  },
+  {
+    "name": "Scarborough Health Network",
+    "address": "3050 Lawrence Ave E, Scarborough",
+    "phone": "416-431-8200",
+    "type": "HOSPITAL",
+    "cities": [
+      "Scarborough",
+      "Agincourt",
+      "Malvern",
+      "Birchmount"
+    ],
+    "province": "ON",
+    "tags": []
+  },
+  {
+    "name": "Black Creek Community Health",
+    "address": "2202 Jane St, Toronto",
+    "phone": "416-249-8000",
+    "type": "MENTAL_HEALTH",
+    "cities": [
+      "Toronto",
+      "North York",
+      "Weston",
+      "Jane-Finch"
+    ],
+    "province": "ON",
+    "tags": []
+  },
+  {
+    "name": "Gerstein Crisis Centre",
+    "address": "100 Charles St E, Toronto",
+    "phone": "416-929-5200",
+    "type": "CRISIS",
+    "cities": [
+      "Toronto"
+    ],
+    "province": "ON",
+    "tags": [
+      "24/7"
+    ]
+  },
+  {
+    "name": "Fred Victor Centre",
+    "address": "145 Queen St E, Toronto",
+    "phone": "416-364-8228",
+    "type": "SHELTER",
+    "cities": [
+      "Toronto",
+      "Downtown Toronto"
+    ],
+    "province": "ON",
+    "tags": []
+  },
+  {
+    "name": "Covenant House Toronto",
+    "address": "20 Gerrard St E, Toronto",
+    "phone": "416-598-4898",
+    "type": "YOUTH",
+    "cities": [
+      "Toronto"
+    ],
+    "province": "ON",
+    "tags": [
+      "youth",
+      "shelter"
+    ]
+  },
+  {
+    "name": "The 519 Community Centre",
+    "address": "519 Church St, Toronto",
+    "phone": "416-392-6874",
+    "type": "LGBTQ",
+    "cities": [
+      "Toronto"
+    ],
+    "province": "ON",
+    "tags": [
+      "LGBTQ+"
+    ]
+  },
+  {
+    "name": "Anishnawbe Health Toronto",
+    "address": "225 Queen St E, Toronto",
+    "phone": "416-360-0486",
+    "type": "INDIGENOUS",
+    "cities": [
+      "Toronto"
+    ],
+    "province": "ON",
+    "tags": [
+      "indigenous"
+    ]
+  },
+  {
+    "name": "Ottawa Crisis Line (The Royal)",
+    "address": "1145 Carling Ave, Ottawa",
+    "phone": "613-722-6914",
+    "type": "CRISIS",
+    "cities": [
+      "Ottawa",
+      "Nepean",
+      "Gloucester",
+      "Kanata",
+      "Orleans",
+      "Barrhaven",
+      "Stittsville",
+      "Manotick",
+      "Richmond",
+      "Kemptville",
+      "Carleton Place",
+      "Arnprior",
+      "Renfrew",
+      "Pembroke",
+      "Petawawa",
+      "Deep River"
+    ],
+    "province": "ON",
+    "tags": [
+      "24/7"
+    ]
+  },
+  {
+    "name": "The Ottawa Hospital",
+    "address": "501 Smyth Rd, Ottawa",
+    "phone": "613-722-7000",
+    "type": "HOSPITAL",
+    "cities": [
+      "Ottawa",
+      "Nepean",
+      "Gloucester"
+    ],
+    "province": "ON",
+    "tags": []
+  },
+  {
+    "name": "CHEO (Children's Hospital of Eastern Ontario)",
+    "address": "401 Smyth Rd, Ottawa",
+    "phone": "613-737-7600",
+    "type": "HOSPITAL",
+    "cities": [
+      "Ottawa"
+    ],
+    "province": "ON",
+    "tags": [
+      "youth",
+      "children"
+    ]
+  },
+  {
+    "name": "Ottawa Distress Centre",
+    "address": "Ottawa",
+    "phone": "613-238-3311",
+    "type": "CRISIS",
+    "cities": [
+      "Ottawa",
+      "Nepean",
+      "Kanata",
+      "Orleans"
+    ],
+    "province": "ON",
+    "tags": [
+      "24/7"
+    ]
+  },
+  {
+    "name": "Carlington Community Health",
+    "address": "900 Merivale Rd, Ottawa",
+    "phone": "613-722-4000",
+    "type": "MENTAL_HEALTH",
+    "cities": [
+      "Ottawa",
+      "Carlington",
+      "Nepean"
+    ],
+    "province": "ON",
+    "tags": []
+  },
+  {
+    "name": "Interval House Ottawa",
+    "address": "Ottawa",
+    "phone": "613-234-5181",
+    "type": "WOMEN",
+    "cities": [
+      "Ottawa"
+    ],
+    "province": "ON",
+    "tags": [
+      "24/7",
+      "women"
+    ]
+  },
+  {
+    "name": "Renfrew Victoria Hospital",
+    "address": "499 Raglan St N, Renfrew",
+    "phone": "613-432-4851",
+    "type": "HOSPITAL",
+    "cities": [
+      "Renfrew",
+      "Arnprior",
+      "Calabogie",
+      "Barry's Bay"
+    ],
+    "province": "ON",
+    "tags": []
+  },
+  {
+    "name": "Hamilton Crisis Line",
+    "address": "Hamilton",
+    "phone": "905-522-1477",
+    "type": "CRISIS",
+    "cities": [
+      "Hamilton",
+      "Ancaster",
+      "Dundas",
+      "Stoney Creek",
+      "Binbrook",
+      "Caledonia",
+      "Mount Hope"
+    ],
+    "province": "ON",
+    "tags": [
+      "24/7"
+    ]
+  },
+  {
+    "name": "St. Joseph's Healthcare Hamilton",
+    "address": "50 Charlton Ave E, Hamilton",
+    "phone": "905-522-1155",
+    "type": "HOSPITAL",
+    "cities": [
+      "Hamilton",
+      "Ancaster",
+      "Dundas"
+    ],
+    "province": "ON",
+    "tags": []
+  },
+  {
+    "name": "Hamilton Health Sciences",
+    "address": "237 Barton St E, Hamilton",
+    "phone": "905-527-4322",
+    "type": "HOSPITAL",
+    "cities": [
+      "Hamilton",
+      "Stoney Creek",
+      "Grimsby",
+      "Waterdown"
+    ],
+    "province": "ON",
+    "tags": []
+  },
+  {
+    "name": "Halton Crisis Service",
+    "address": "Oakville / Burlington",
+    "phone": "905-849-4541",
+    "type": "CRISIS",
+    "cities": [
+      "Oakville",
+      "Burlington",
+      "Milton",
+      "Halton Hills",
+      "Georgetown",
+      "Acton",
+      "Campbellville"
+    ],
+    "province": "ON",
+    "tags": [
+      "24/7"
+    ]
+  },
+  {
+    "name": "Halton Healthcare (Oakville Trafalgar)",
+    "address": "327 Reynolds St, Oakville",
+    "phone": "905-845-2571",
+    "type": "HOSPITAL",
+    "cities": [
+      "Oakville",
+      "Burlington",
+      "Mississauga West"
+    ],
+    "province": "ON",
+    "tags": []
+  },
+  {
+    "name": "Niagara Region Crisis Line",
+    "address": "Niagara Region",
+    "phone": "1-866-550-5205",
+    "type": "CRISIS",
+    "cities": [
+      "St. Catharines",
+      "Niagara Falls",
+      "Welland",
+      "Fort Erie",
+      "Grimsby",
+      "Beamsville",
+      "Port Colborne",
+      "Thorold",
+      "Pelham",
+      "Wainfleet",
+      "Lincoln",
+      "West Lincoln",
+      "Niagara-on-the-Lake",
+      "Queenston",
+      "Virgil",
+      "Fonthill",
+      "Ridgeway",
+      "Crystal Beach"
+    ],
+    "province": "ON",
+    "tags": [
+      "24/7"
+    ]
+  },
+  {
+    "name": "Niagara Health (St. Catharines)",
+    "address": "1200 Fourth Ave, St. Catharines",
+    "phone": "905-684-7271",
+    "type": "HOSPITAL",
+    "cities": [
+      "St. Catharines",
+      "Thorold",
+      "Pelham"
+    ],
+    "province": "ON",
+    "tags": []
+  },
+  {
+    "name": "Niagara Health (Niagara Falls)",
+    "address": "5546 Portage Rd, Niagara Falls",
+    "phone": "905-378-4647",
+    "type": "HOSPITAL",
+    "cities": [
+      "Niagara Falls",
+      "Queenston"
+    ],
+    "province": "ON",
+    "tags": []
+  },
+  {
+    "name": "Peel Crisis Line",
+    "address": "Brampton / Mississauga / Caledon",
+    "phone": "905-278-9036",
+    "type": "CRISIS",
+    "cities": [
+      "Mississauga",
+      "Brampton",
+      "Caledon",
+      "Bolton",
+      "Malton",
+      "Meadowvale",
+      "Erin Mills",
+      "Port Credit",
+      "Streetsville",
+      "Cooksville",
+      "Clarkson",
+      "Lorne Park",
+      "Bramalea",
+      "Sandalwood",
+      "Tullamore",
+      "Cheltenham"
+    ],
+    "province": "ON",
+    "tags": [
+      "24/7"
+    ]
+  },
+  {
+    "name": "Trillium Health Partners (Mississauga)",
+    "address": "100 Queensway W, Mississauga",
+    "phone": "905-848-7100",
+    "type": "HOSPITAL",
+    "cities": [
+      "Mississauga",
+      "Etobicoke West",
+      "Port Credit",
+      "Cooksville"
+    ],
+    "province": "ON",
+    "tags": []
+  },
+  {
+    "name": "Brampton Civic Hospital",
+    "address": "2100 Bovaird Dr E, Brampton",
+    "phone": "905-494-2120",
+    "type": "HOSPITAL",
+    "cities": [
+      "Brampton",
+      "Bramalea",
+      "Sandalwood",
+      "Heart Lake"
+    ],
+    "province": "ON",
+    "tags": []
+  },
+  {
+    "name": "Punjabi Community Health Services",
+    "address": "7380 Martin Grove Rd, Brampton",
+    "phone": "905-458-1832",
+    "type": "MENTAL_HEALTH",
+    "cities": [
+      "Brampton",
+      "Mississauga"
+    ],
+    "province": "ON",
+    "tags": [
+      "multilingual"
+    ]
+  },
+  {
+    "name": "Durham Crisis Line",
+    "address": "Durham Region",
+    "phone": "905-666-0483",
+    "type": "CRISIS",
+    "cities": [
+      "Oshawa",
+      "Whitby",
+      "Ajax",
+      "Pickering",
+      "Clarington",
+      "Uxbridge",
+      "Brock",
+      "Scugog",
+      "Port Perry",
+      "Bowmanville",
+      "Newcastle",
+      "Orono",
+      "Courtice",
+      "Brooklin"
+    ],
+    "province": "ON",
+    "tags": [
+      "24/7"
+    ]
+  },
+  {
+    "name": "Lakeridge Health (Oshawa)",
+    "address": "1 Hospital Ct, Oshawa",
+    "phone": "905-576-8711",
+    "type": "HOSPITAL",
+    "cities": [
+      "Oshawa",
+      "Whitby",
+      "Courtice",
+      "Bowmanville"
+    ],
+    "province": "ON",
+    "tags": []
+  },
+  {
+    "name": "Peterborough Crisis Line",
+    "address": "Peterborough",
+    "phone": "705-745-6484",
+    "type": "CRISIS",
+    "cities": [
+      "Peterborough",
+      "Lakefield",
+      "Norwood",
+      "Havelock",
+      "Campbellford",
+      "Bancroft",
+      "Apsley",
+      "Selwyn",
+      "Cavan Monaghan",
+      "Smith-Ennismore",
+      "Millbrook"
+    ],
+    "province": "ON",
+    "tags": [
+      "24/7"
+    ]
+  },
+  {
+    "name": "Peterborough Regional Health Centre",
+    "address": "1 Hospital Dr, Peterborough",
+    "phone": "705-743-2121",
+    "type": "HOSPITAL",
+    "cities": [
+      "Peterborough",
+      "Lakefield",
+      "Norwood"
+    ],
+    "province": "ON",
+    "tags": []
+  },
+  {
+    "name": "Ross Memorial Hospital (Lindsay)",
+    "address": "10 Angeline St N, Lindsay",
+    "phone": "705-324-6111",
+    "type": "HOSPITAL",
+    "cities": [
+      "Lindsay",
+      "Omemee",
+      "Fenelon Falls",
+      "Coboconk",
+      "Bobcaygeon",
+      "Kinmount",
+      "Haliburton"
+    ],
+    "province": "ON",
+    "tags": []
+  },
+  {
+    "name": "Haliburton Highlands Health Services",
+    "address": "Haliburton",
+    "phone": "705-457-1392",
+    "type": "HOSPITAL",
+    "cities": [
+      "Haliburton",
+      "Minden",
+      "Carnarvon",
+      "West Guilford",
+      "Dorset"
+    ],
+    "province": "ON",
+    "tags": []
+  },
+  {
+    "name": "Here 24/7 Crisis (Waterloo)",
+    "address": "Waterloo Region",
+    "phone": "1-844-437-3247",
+    "type": "CRISIS",
+    "cities": [
+      "Kitchener",
+      "Waterloo",
+      "Cambridge",
+      "Woolwich",
+      "Wellesley",
+      "North Dumfries",
+      "Wilmot",
+      "Fergus",
+      "Elora",
+      "Centre Wellington",
+      "Guelph",
+      "Erin",
+      "Puslinch",
+      "Harriston",
+      "Mount Forest",
+      "Palmerston"
+    ],
+    "province": "ON",
+    "tags": [
+      "24/7"
+    ]
+  },
+  {
+    "name": "Grand River Hospital",
+    "address": "835 King St W, Kitchener",
+    "phone": "519-749-4300",
+    "type": "HOSPITAL",
+    "cities": [
+      "Kitchener",
+      "Waterloo",
+      "Breslau"
+    ],
+    "province": "ON",
+    "tags": []
+  },
+  {
+    "name": "St. Mary's General Hospital (Kitchener)",
+    "address": "911 Queen's Blvd, Kitchener",
+    "phone": "519-744-3311",
+    "type": "HOSPITAL",
+    "cities": [
+      "Kitchener",
+      "Waterloo"
+    ],
+    "province": "ON",
+    "tags": []
+  },
+  {
+    "name": "Guelph General Hospital",
+    "address": "115 Delhi St, Guelph",
+    "phone": "519-822-5350",
+    "type": "HOSPITAL",
+    "cities": [
+      "Guelph",
+      "Puslinch",
+      "Rockwood",
+      "Aberfoyle"
+    ],
+    "province": "ON",
+    "tags": []
+  },
+  {
+    "name": "Homewood Health Centre (Guelph)",
+    "address": "150 Delhi St, Guelph",
+    "phone": "519-824-1010",
+    "type": "MENTAL_HEALTH",
+    "cities": [
+      "Guelph",
+      "Cambridge",
+      "Kitchener"
+    ],
+    "province": "ON",
+    "tags": []
+  },
+  {
+    "name": "London Crisis Centre (CMHA Middlesex)",
+    "address": "648 Huron St, London",
+    "phone": "519-433-2023",
+    "type": "CRISIS",
+    "cities": [
+      "London",
+      "St. Thomas",
+      "Strathroy",
+      "Aylmer",
+      "Ingersoll",
+      "Tillsonburg",
+      "Woodstock",
+      "Simcoe",
+      "Delhi",
+      "Brantford",
+      "Paris",
+      "Ayr",
+      "Norwich",
+      "Otterville",
+      "Tillsonburg",
+      "Port Dover",
+      "Port Rowan",
+      "Simcoe",
+      "Waterford",
+      "Scotland"
+    ],
+    "province": "ON",
+    "tags": [
+      "24/7"
+    ]
+  },
+  {
+    "name": "London Health Sciences Centre",
+    "address": "339 Windermere Rd, London",
+    "phone": "519-685-8500",
+    "type": "HOSPITAL",
+    "cities": [
+      "London",
+      "Lambeth",
+      "Byron",
+      "Westmount"
+    ],
+    "province": "ON",
+    "tags": []
+  },
+  {
+    "name": "St. Joseph's Health Care London",
+    "address": "268 Grosvenor St, London",
+    "phone": "519-646-6100",
+    "type": "HOSPITAL",
+    "cities": [
+      "London"
+    ],
+    "province": "ON",
+    "tags": []
+  },
+  {
+    "name": "Chatham-Kent Crisis Line",
+    "address": "Chatham-Kent",
+    "phone": "519-354-6772",
+    "type": "CRISIS",
+    "cities": [
+      "Chatham",
+      "Tilbury",
+      "Wallaceburg",
+      "Blenheim",
+      "Ridgetown",
+      "Dresden",
+      "Wheatley",
+      "Merlin",
+      "Pain Court",
+      "Bothwell",
+      "Thamesville"
+    ],
+    "province": "ON",
+    "tags": [
+      "24/7"
+    ]
+  },
+  {
+    "name": "Windsor Crisis Line",
+    "address": "Windsor / Essex County",
+    "phone": "519-973-4435",
+    "type": "CRISIS",
+    "cities": [
+      "Windsor",
+      "LaSalle",
+      "Tecumseh",
+      "Amherstburg",
+      "Kingsville",
+      "Leamington",
+      "Essex",
+      "Lakeshore",
+      "Belle River",
+      "Comber",
+      "Cottam",
+      "Harrow",
+      "Ruthven",
+      "McGregor"
+    ],
+    "province": "ON",
+    "tags": [
+      "24/7"
+    ]
+  },
+  {
+    "name": "Windsor Regional Hospital",
+    "address": "1995 Lens Ave, Windsor",
+    "phone": "519-254-5577",
+    "type": "HOSPITAL",
+    "cities": [
+      "Windsor",
+      "Tecumseh",
+      "LaSalle"
+    ],
+    "province": "ON",
+    "tags": []
+  },
+  {
+    "name": "Leamington District Memorial Hospital",
+    "address": "194 Talbot St W, Leamington",
+    "phone": "519-326-2373",
+    "type": "HOSPITAL",
+    "cities": [
+      "Leamington",
+      "Kingsville",
+      "Ruthven",
+      "Cottam"
+    ],
+    "province": "ON",
+    "tags": []
+  },
+  {
+    "name": "CMHA Sudbury/Manitoulin Crisis",
+    "address": "Sudbury / Manitoulin",
+    "phone": "705-675-4760",
+    "type": "CRISIS",
+    "cities": [
+      "Greater Sudbury",
+      "Espanola",
+      "Manitowaning",
+      "Gore Bay",
+      "Little Current",
+      "Mindemoya",
+      "South Baymouth",
+      "Tehkummah",
+      "Massey",
+      "Blind River",
+      "Elliot Lake",
+      "Spragge",
+      "Serpent River",
+      "Nairn Centre"
+    ],
+    "province": "ON",
+    "tags": [
+      "24/7"
+    ]
+  },
+  {
+    "name": "Health Sciences North (Sudbury)",
+    "address": "41 Ramsey Lake Rd, Sudbury",
+    "phone": "705-523-7100",
+    "type": "HOSPITAL",
+    "cities": [
+      "Greater Sudbury",
+      "Capreol",
+      "Azilda",
+      "Chelmsford",
+      "Val Caron",
+      "Hanmer",
+      "Lively",
+      "Whitefish"
+    ],
+    "province": "ON",
+    "tags": []
+  },
+  {
+    "name": "Sault Ste. Marie Crisis Line",
+    "address": "Sault Ste. Marie",
+    "phone": "705-759-5432",
+    "type": "CRISIS",
+    "cities": [
+      "Sault Ste. Marie",
+      "Wawa",
+      "Chapleau",
+      "White River",
+      "Dubreuilville",
+      "Hornepayne",
+      "Hawk Junction",
+      "Missanabie",
+      "Searchmont",
+      "Echo Bay"
+    ],
+    "province": "ON",
+    "tags": [
+      "24/7"
+    ]
+  },
+  {
+    "name": "Sault Area Hospital",
+    "address": "750 Great Northern Rd, Sault Ste. Marie",
+    "phone": "705-759-3434",
+    "type": "HOSPITAL",
+    "cities": [
+      "Sault Ste. Marie",
+      "Batchewana Bay",
+      "Goulais River"
+    ],
+    "province": "ON",
+    "tags": []
+  },
+  {
+    "name": "Thunder Bay Crisis Line",
+    "address": "Thunder Bay",
+    "phone": "807-346-8282",
+    "type": "CRISIS",
+    "cities": [
+      "Thunder Bay",
+      "Marathon",
+      "Schreiber",
+      "Terrace Bay",
+      "Nipigon",
+      "Red Rock",
+      "Geraldton",
+      "Longlac",
+      "Greenstone",
+      "Beardmore",
+      "Nakina",
+      "Manitouwadge",
+      "Murillo",
+      "Kakabeka Falls",
+      "Shuniah",
+      "Oliver Paipoonge"
+    ],
+    "province": "ON",
+    "tags": [
+      "24/7"
+    ]
+  },
+  {
+    "name": "Thunder Bay Regional Health Sciences",
+    "address": "980 Oliver Rd, Thunder Bay",
+    "phone": "807-684-6000",
+    "type": "HOSPITAL",
+    "cities": [
+      "Thunder Bay"
+    ],
+    "province": "ON",
+    "tags": []
+  },
+  {
+    "name": "Kenora Crisis Line",
+    "address": "Kenora / Northwestern Ontario",
+    "phone": "807-468-9111",
+    "type": "CRISIS",
+    "cities": [
+      "Kenora",
+      "Dryden",
+      "Sioux Lookout",
+      "Red Lake",
+      "Ear Falls",
+      "Vermilion Bay",
+      "Ignace",
+      "Nestor Falls",
+      "Minaki",
+      "Keewatin",
+      "Norman",
+      "Balmertown",
+      "Cochenour",
+      "Pickle Lake",
+      "Fort Frances",
+      "Emo",
+      "Rainy River",
+      "Atikokan",
+      "Mine Centre"
+    ],
+    "province": "ON",
+    "tags": [
+      "24/7"
+    ]
+  },
+  {
+    "name": "Lake of the Woods District Hospital",
+    "address": "21 Sylvan St, Kenora",
+    "phone": "807-468-9861",
+    "type": "HOSPITAL",
+    "cities": [
+      "Kenora",
+      "Keewatin",
+      "Norman",
+      "Nestor Falls"
+    ],
+    "province": "ON",
+    "tags": []
+  },
+  {
+    "name": "Timmins & District Crisis",
+    "address": "Timmins / Northern Ontario",
+    "phone": "705-267-7354",
+    "type": "CRISIS",
+    "cities": [
+      "Timmins",
+      "Iroquois Falls",
+      "Hearst",
+      "Kapuskasing",
+      "Smooth Rock Falls",
+      "Cochrane",
+      "Matheson",
+      "Kirkland Lake",
+      "Englehart",
+      "New Liskeard",
+      "Temiskaming Shores",
+      "Haileybury",
+      "Cobalt",
+      "Latchford"
+    ],
+    "province": "ON",
+    "tags": [
+      "24/7"
+    ]
+  },
+  {
+    "name": "Timmins and District Hospital",
+    "address": "700 Ross Ave E, Timmins",
+    "phone": "705-267-2131",
+    "type": "HOSPITAL",
+    "cities": [
+      "Timmins",
+      "South Porcupine",
+      "Schumacher",
+      "Mountjoy"
+    ],
+    "province": "ON",
+    "tags": []
+  },
+  {
+    "name": "Meno Ya Win Health Centre (Sioux Lookout)",
+    "address": "1 Meno Ya Win Way, Sioux Lookout",
+    "phone": "807-737-3030",
+    "type": "HOSPITAL",
+    "cities": [
+      "Sioux Lookout",
+      "Pickle Lake",
+      "Hudson"
+    ],
+    "province": "ON",
+    "tags": [
+      "indigenous"
+    ]
+  },
+  {
+    "name": "BC Crisis Line",
+    "address": "BC-wide",
+    "phone": "1-800-784-2433",
+    "type": "CRISIS",
+    "cities": [
+      "ALL"
+    ],
+    "province": "BC",
+    "tags": [
+      "24/7"
+    ]
+  },
+  {
+    "name": "Vancouver Crisis Centre",
+    "address": "Vancouver",
+    "phone": "604-872-3311",
+    "type": "CRISIS",
+    "cities": [
+      "Vancouver",
+      "North Vancouver",
+      "West Vancouver",
+      "Burnaby",
+      "Richmond",
+      "Coquitlam",
+      "Port Coquitlam",
+      "Port Moody",
+      "Surrey",
+      "Delta",
+      "Langley",
+      "Abbotsford",
+      "Chilliwack",
+      "Mission",
+      "Maple Ridge",
+      "Pitt Meadows",
+      "New Westminster",
+      "White Rock",
+      "Tsawwassen",
+      "Ladner"
+    ],
+    "province": "BC",
+    "tags": [
+      "24/7"
+    ]
+  },
+  {
+    "name": "Vancouver General Hospital",
+    "address": "855 W 12th Ave, Vancouver",
+    "phone": "604-875-4111",
+    "type": "HOSPITAL",
+    "cities": [
+      "Vancouver",
+      "Kitsilano",
+      "Fairview"
+    ],
+    "province": "BC",
+    "tags": []
+  },
+  {
+    "name": "BC Children's Hospital",
+    "address": "4480 Oak St, Vancouver",
+    "phone": "604-875-2345",
+    "type": "HOSPITAL",
+    "cities": [
+      "Vancouver"
+    ],
+    "province": "BC",
+    "tags": [
+      "youth",
+      "children"
+    ]
+  },
+  {
+    "name": "Surrey Memorial Hospital",
+    "address": "13750 96th Ave, Surrey",
+    "phone": "604-581-2211",
+    "type": "HOSPITAL",
+    "cities": [
+      "Surrey",
+      "Delta",
+      "White Rock",
+      "Cloverdale",
+      "Newton",
+      "Whalley"
+    ],
+    "province": "BC",
+    "tags": []
+  },
+  {
+    "name": "Royal Columbian Hospital",
+    "address": "330 E Columbia St, New Westminster",
+    "phone": "604-520-4253",
+    "type": "HOSPITAL",
+    "cities": [
+      "New Westminster",
+      "Burnaby",
+      "Coquitlam",
+      "Port Coquitlam"
+    ],
+    "province": "BC",
+    "tags": []
+  },
+  {
+    "name": "Langley Memorial Hospital",
+    "address": "22051 Fraser Hwy, Langley",
+    "phone": "604-534-4121",
+    "type": "HOSPITAL",
+    "cities": [
+      "Langley",
+      "Aldergrove",
+      "Fort Langley",
+      "Walnut Grove",
+      "Cloverdale"
+    ],
+    "province": "BC",
+    "tags": []
+  },
+  {
+    "name": "Abbotsford Regional Hospital",
+    "address": "32900 Marshall Rd, Abbotsford",
+    "phone": "604-851-4700",
+    "type": "HOSPITAL",
+    "cities": [
+      "Abbotsford",
+      "Mission",
+      "Matsqui",
+      "Clearbrook",
+      "Clearwater"
+    ],
+    "province": "BC",
+    "tags": []
+  },
+  {
+    "name": "Chilliwack General Hospital",
+    "address": "45600 Menholm Rd, Chilliwack",
+    "phone": "604-795-4141",
+    "type": "HOSPITAL",
+    "cities": [
+      "Chilliwack",
+      "Hope",
+      "Agassiz",
+      "Harrison Hot Springs",
+      "Sardis",
+      "Cultus Lake",
+      "Rosedale",
+      "Yarrow",
+      "Vedder Crossing"
+    ],
+    "province": "BC",
+    "tags": []
+  },
+  {
+    "name": "Kelowna General Hospital",
+    "address": "2268 Pandosy St, Kelowna",
+    "phone": "250-862-4000",
+    "type": "HOSPITAL",
+    "cities": [
+      "Kelowna",
+      "West Kelowna",
+      "Lake Country",
+      "Peachland",
+      "Summerland",
+      "Naramata",
+      "Winfield",
+      "Ellison",
+      "Joe Rich"
+    ],
+    "province": "BC",
+    "tags": []
+  },
+  {
+    "name": "Interior Health Crisis (Kelowna)",
+    "address": "Kelowna / Interior BC",
+    "phone": "1-888-353-2273",
+    "type": "CRISIS",
+    "cities": [
+      "Kelowna",
+      "Vernon",
+      "Penticton",
+      "Kamloops",
+      "Merritt",
+      "Salmon Arm",
+      "Revelstoke",
+      "Nakusp",
+      "Nelson",
+      "Trail",
+      "Castlegar",
+      "Grand Forks",
+      "Osoyoos",
+      "Oliver",
+      "Keremeos",
+      "Princeton",
+      "Hedley",
+      "Summerland",
+      "Peachland",
+      "West Kelowna",
+      "Lake Country",
+      "Armstrong",
+      "Enderby",
+      "Lumby",
+      "Chase",
+      "Barriere",
+      "Clearwater",
+      "Ashcroft",
+      "Cache Creek",
+      "100 Mile House",
+      "Williams Lake",
+      "Quesnel"
+    ],
+    "province": "BC",
+    "tags": [
+      "24/7"
+    ]
+  },
+  {
+    "name": "Royal Inland Hospital (Kamloops)",
+    "address": "311 Columbia St, Kamloops",
+    "phone": "250-374-5111",
+    "type": "HOSPITAL",
+    "cities": [
+      "Kamloops",
+      "Sun Peaks",
+      "Merritt",
+      "Chase",
+      "Barriere",
+      "Clearwater",
+      "Logan Lake"
+    ],
+    "province": "BC",
+    "tags": []
+  },
+  {
+    "name": "Vernon Jubilee Hospital",
+    "address": "2101 32nd St, Vernon",
+    "phone": "250-545-2211",
+    "type": "HOSPITAL",
+    "cities": [
+      "Vernon",
+      "Armstrong",
+      "Enderby",
+      "Lumby",
+      "Coldstream",
+      "Lavington"
+    ],
+    "province": "BC",
+    "tags": []
+  },
+  {
+    "name": "Penticton Regional Hospital",
+    "address": "550 Carmi Ave, Penticton",
+    "phone": "250-492-4000",
+    "type": "HOSPITAL",
+    "cities": [
+      "Penticton",
+      "Summerland",
+      "Naramata",
+      "Kaleden",
+      "Oliver",
+      "Osoyoos",
+      "Keremeos"
+    ],
+    "province": "BC",
+    "tags": []
+  },
+  {
+    "name": "Victoria Crisis Line (Vancouver Island)",
+    "address": "Victoria / Vancouver Island",
+    "phone": "250-386-6323",
+    "type": "CRISIS",
+    "cities": [
+      "Victoria",
+      "Saanich",
+      "Esquimalt",
+      "Oak Bay",
+      "View Royal",
+      "Colwood",
+      "Langford",
+      "Metchosin",
+      "Sooke",
+      "Sidney",
+      "Central Saanich",
+      "North Saanich",
+      "Salt Spring Island",
+      "Nanaimo",
+      "Parksville",
+      "Qualicum Beach",
+      "Port Alberni",
+      "Tofino",
+      "Ucluelet",
+      "Campbell River",
+      "Courtenay",
+      "Comox",
+      "Cumberland",
+      "Duncan",
+      "Lake Cowichan",
+      "Chemainus",
+      "Ladysmith",
+      "Cobble Hill",
+      "Mill Bay",
+      "Cowichan Bay",
+      "Shawnigan Lake",
+      "Cowichan Station"
+    ],
+    "province": "BC",
+    "tags": [
+      "24/7"
+    ]
+  },
+  {
+    "name": "Royal Jubilee Hospital (Victoria)",
+    "address": "1952 Bay St, Victoria",
+    "phone": "250-370-8000",
+    "type": "HOSPITAL",
+    "cities": [
+      "Victoria",
+      "Saanich",
+      "Esquimalt"
+    ],
+    "province": "BC",
+    "tags": []
+  },
+  {
+    "name": "Victoria General Hospital",
+    "address": "1 Hospital Way, Victoria",
+    "phone": "250-727-4212",
+    "type": "HOSPITAL",
+    "cities": [
+      "Victoria",
+      "Langford",
+      "View Royal",
+      "Colwood"
+    ],
+    "province": "BC",
+    "tags": []
+  },
+  {
+    "name": "Nanaimo Regional General Hospital",
+    "address": "1200 Dufferin Cres, Nanaimo",
+    "phone": "250-754-2141",
+    "type": "HOSPITAL",
+    "cities": [
+      "Nanaimo",
+      "Lantzville",
+      "Cedar",
+      "Extension",
+      "South Wellington",
+      "Ladysmith"
+    ],
+    "province": "BC",
+    "tags": []
+  },
+  {
+    "name": "Prince George Crisis Line",
+    "address": "Prince George / Northern BC",
+    "phone": "250-563-1214",
+    "type": "CRISIS",
+    "cities": [
+      "Prince George",
+      "Vanderhoof",
+      "Fort St. James",
+      "Burns Lake",
+      "Smithers",
+      "Terrace",
+      "Kitimat",
+      "Prince Rupert",
+      "Masset",
+      "Queen Charlotte",
+      "Houston",
+      "Fort Fraser",
+      "Endako",
+      "Topley",
+      "Telkwa",
+      "Hazelton",
+      "New Hazelton",
+      "Stewart",
+      "Dease Lake",
+      "Atlin"
+    ],
+    "province": "BC",
+    "tags": [
+      "24/7"
+    ]
+  },
+  {
+    "name": "University Hospital of Northern BC (Prince George)",
+    "address": "1475 Edmonton St, Prince George",
+    "phone": "250-565-2000",
+    "type": "HOSPITAL",
+    "cities": [
+      "Prince George",
+      "Vanderhoof",
+      "Fraser Lake",
+      "Fort St. James",
+      "Mackenzie"
+    ],
+    "province": "BC",
+    "tags": []
+  },
+  {
+    "name": "Mills Memorial Hospital (Terrace)",
+    "address": "4720 Haugland Ave, Terrace",
+    "phone": "250-635-2211",
+    "type": "HOSPITAL",
+    "cities": [
+      "Terrace",
+      "Kitimat",
+      "Hazelton",
+      "Smithers",
+      "Houston",
+      "Telkwa"
+    ],
+    "province": "BC",
+    "tags": []
+  },
+  {
+    "name": "Fort St. John Crisis / Northern Health",
+    "address": "Fort St. John / Peace Region",
+    "phone": "250-785-6675",
+    "type": "CRISIS",
+    "cities": [
+      "Fort St. John",
+      "Dawson Creek",
+      "Chetwynd",
+      "Tumbler Ridge",
+      "Hudson's Hope",
+      "Mackenzie",
+      "Fort Nelson",
+      "Muncho Lake",
+      "Liard River",
+      "Pink Mountain"
+    ],
+    "province": "BC",
+    "tags": [
+      "24/7"
+    ]
+  },
+  {
+    "name": "Alberta Mental Health Helpline",
+    "address": "Alberta-wide",
+    "phone": "1-877-303-2642",
+    "type": "CRISIS",
+    "cities": [
+      "ALL"
+    ],
+    "province": "AB",
+    "tags": [
+      "24/7"
+    ]
+  },
+  {
+    "name": "Distress Centre Calgary",
+    "address": "Calgary",
+    "phone": "403-266-4357",
+    "type": "CRISIS",
+    "cities": [
+      "Calgary",
+      "Airdrie",
+      "Cochrane",
+      "Okotoks",
+      "Chestermere",
+      "Strathmore",
+      "High River",
+      "Nanton",
+      "Claresholm",
+      "Fort Macleod",
+      "Lethbridge",
+      "Taber",
+      "Brooks",
+      "Medicine Hat",
+      "Drumheller",
+      "Hanna",
+      "Stettler",
+      "Camrose",
+      "Wetaskiwin",
+      "Ponoka",
+      "Lacombe",
+      "Red Deer",
+      "Innisfail",
+      "Olds",
+      "Didsbury",
+      "Crossfield",
+      "Carstairs",
+      "Beiseker",
+      "Irricana",
+      "Rockyford",
+      "Hussar",
+      "Gleichen",
+      "Blackie",
+      "Cayley",
+      "Champion",
+      "Coaldale",
+      "Coalhurst",
+      "Nobleford",
+      "Barons",
+      "Monarch",
+      "Vauxhall",
+      "Bow Island",
+      "Foremost",
+      "Milk River"
+    ],
+    "province": "AB",
+    "tags": [
+      "24/7"
+    ]
+  },
+  {
+    "name": "Foothills Medical Centre (Calgary)",
+    "address": "1403 29th St NW, Calgary",
+    "phone": "403-944-1110",
+    "type": "HOSPITAL",
+    "cities": [
+      "Calgary",
+      "Bowness",
+      "Montgomery",
+      "Silver Springs"
+    ],
+    "province": "AB",
+    "tags": []
+  },
+  {
+    "name": "Peter Lougheed Centre (Calgary)",
+    "address": "3500 26th Ave NE, Calgary",
+    "phone": "403-943-4555",
+    "type": "HOSPITAL",
+    "cities": [
+      "Calgary",
+      "Forest Lawn",
+      "Rundle",
+      "Monterey Park",
+      "Penbrooke"
+    ],
+    "province": "AB",
+    "tags": []
+  },
+  {
+    "name": "Rockyview General Hospital",
+    "address": "7007 14th St SW, Calgary",
+    "phone": "403-943-3000",
+    "type": "HOSPITAL",
+    "cities": [
+      "Calgary",
+      "South Calgary",
+      "Palliser",
+      "Oakridge",
+      "Woodbine"
+    ],
+    "province": "AB",
+    "tags": []
+  },
+  {
+    "name": "Alberta Children's Hospital",
+    "address": "2888 Shaganappi Trail NW, Calgary",
+    "phone": "403-955-7211",
+    "type": "HOSPITAL",
+    "cities": [
+      "Calgary"
+    ],
+    "province": "AB",
+    "tags": [
+      "youth",
+      "children"
+    ]
+  },
+  {
+    "name": "Lethbridge Crisis Line",
+    "address": "Lethbridge / Southern AB",
+    "phone": "403-327-7905",
+    "type": "CRISIS",
+    "cities": [
+      "Lethbridge",
+      "Coaldale",
+      "Coalhurst",
+      "Taber",
+      "Picture Butte",
+      "Raymond",
+      "Stirling",
+      "Magrath",
+      "Cardston",
+      "Pincher Creek",
+      "Claresholm",
+      "Vulture",
+      "Nanton",
+      "Fort Macleod",
+      "Granum",
+      "Monarch",
+      "Barons",
+      "Nobleford",
+      "Vauxhall",
+      "Bow Island",
+      "Foremost",
+      "Milk River",
+      "Coutts",
+      "Warner",
+      "Wrentham",
+      "Barnwell",
+      "Turin"
+    ],
+    "province": "AB",
+    "tags": [
+      "24/7"
+    ]
+  },
+  {
+    "name": "Chinook Regional Hospital (Lethbridge)",
+    "address": "960 19 St S, Lethbridge",
+    "phone": "403-388-6111",
+    "type": "HOSPITAL",
+    "cities": [
+      "Lethbridge",
+      "Coaldale",
+      "Coalhurst",
+      "Taber",
+      "Magrath",
+      "Raymond"
+    ],
+    "province": "AB",
+    "tags": []
+  },
+  {
+    "name": "Edmonton Crisis Diversion",
+    "address": "Edmonton / Capital Region",
+    "phone": "780-482-4357",
+    "type": "CRISIS",
+    "cities": [
+      "Edmonton",
+      "St. Albert",
+      "Sherwood Park",
+      "Fort Saskatchewan",
+      "Spruce Grove",
+      "Stony Plain",
+      "Leduc",
+      "Beaumont",
+      "Devon",
+      "Morinville",
+      "Legal",
+      "Bon Accord",
+      "Gibbons",
+      "Redwater",
+      "Tofield",
+      "Mundare",
+      "Vegreville",
+      "Lamont",
+      "Two Hills",
+      "Vermilion",
+      "Lloydminster"
+    ],
+    "province": "AB",
+    "tags": [
+      "24/7"
+    ]
+  },
+  {
+    "name": "University of Alberta Hospital",
+    "address": "8440 112th St NW, Edmonton",
+    "phone": "780-407-8822",
+    "type": "HOSPITAL",
+    "cities": [
+      "Edmonton",
+      "Garneau",
+      "South Edmonton",
+      "Belgravia"
+    ],
+    "province": "AB",
+    "tags": []
+  },
+  {
+    "name": "Royal Alexandra Hospital",
+    "address": "10240 Kingsway NW, Edmonton",
+    "phone": "780-477-4111",
+    "type": "HOSPITAL",
+    "cities": [
+      "Edmonton",
+      "North Edmonton",
+      "Calder",
+      "Griesbach"
+    ],
+    "province": "AB",
+    "tags": []
+  },
+  {
+    "name": "Stollery Children's Hospital",
+    "address": "8440 112th St NW, Edmonton",
+    "phone": "780-407-8822",
+    "type": "HOSPITAL",
+    "cities": [
+      "Edmonton"
+    ],
+    "province": "AB",
+    "tags": [
+      "youth",
+      "children"
+    ]
+  },
+  {
+    "name": "Red Deer Regional Hospital",
+    "address": "3942 50A Ave, Red Deer",
+    "phone": "403-343-4422",
+    "type": "HOSPITAL",
+    "cities": [
+      "Red Deer",
+      "Lacombe",
+      "Ponoka",
+      "Sylvan Lake",
+      "Blackfalds",
+      "Penhold",
+      "Innisfail",
+      "Olds",
+      "Sundre",
+      "Rocky Mountain House",
+      "Rimbey",
+      "Bashaw"
+    ],
+    "province": "AB",
+    "tags": []
+  },
+  {
+    "name": "Red Deer Crisis Line",
+    "address": "Red Deer / Central AB",
+    "phone": "403-346-5555",
+    "type": "CRISIS",
+    "cities": [
+      "Red Deer",
+      "Lacombe",
+      "Ponoka",
+      "Sylvan Lake",
+      "Blackfalds",
+      "Penhold",
+      "Innisfail",
+      "Olds",
+      "Sundre",
+      "Rocky Mountain House",
+      "Rimbey",
+      "Stettler",
+      "Bashaw",
+      "Camrose",
+      "Wetaskiwin",
+      "Millet",
+      "Calmar"
+    ],
+    "province": "AB",
+    "tags": [
+      "24/7"
+    ]
+  },
+  {
+    "name": "Fort McMurray Crisis Line",
+    "address": "Fort McMurray / Wood Buffalo",
+    "phone": "780-743-2606",
+    "type": "CRISIS",
+    "cities": [
+      "Fort McMurray",
+      "Anzac",
+      "Janvier",
+      "Conklin",
+      "Wandering River",
+      "Grassland",
+      "Mariana Lake",
+      "Lac La Biche",
+      "Athabasca",
+      "Boyle",
+      "Plamondon"
+    ],
+    "province": "AB",
+    "tags": [
+      "24/7"
+    ]
+  },
+  {
+    "name": "Grande Prairie Crisis Line",
+    "address": "Grande Prairie / Peace Country",
+    "phone": "780-814-0505",
+    "type": "CRISIS",
+    "cities": [
+      "Grande Prairie",
+      "Clairmont",
+      "Sexsmith",
+      "Wembley",
+      "Beaverlodge",
+      "Valleyview",
+      "High Prairie",
+      "Peace River",
+      "Grimshaw",
+      "Manning",
+      "Fairview",
+      "Spirit River",
+      "Rycroft",
+      "Dawson Creek"
+    ],
+    "province": "AB",
+    "tags": [
+      "24/7"
+    ]
+  },
+  {
+    "name": "Queen Elizabeth II Hospital (Grande Prairie)",
+    "address": "10409 98th St, Grande Prairie",
+    "phone": "780-538-7100",
+    "type": "HOSPITAL",
+    "cities": [
+      "Grande Prairie",
+      "Clairmont",
+      "Sexsmith",
+      "Wembley",
+      "Beaverlodge"
+    ],
+    "province": "AB",
+    "tags": []
+  },
+  {
+    "name": "Banff / Canmore Crisis (AHS)",
+    "address": "Bow Valley / Mountain Communities",
+    "phone": "1-877-303-2642",
+    "type": "CRISIS",
+    "cities": [
+      "Banff",
+      "Canmore",
+      "Lake Louise",
+      "Field",
+      "Golden",
+      "Jasper",
+      "Hinton",
+      "Edson",
+      "Drayton Valley"
+    ],
+    "province": "AB",
+    "tags": [
+      "24/7"
+    ]
+  },
+  {
+    "name": "Centre de prévention du suicide (QC)",
+    "address": "Québec-wide",
+    "phone": "1-866-APPELLE (277-3553)",
+    "type": "CRISIS",
+    "cities": [
+      "ALL"
+    ],
+    "province": "QC",
+    "tags": [
+      "24/7"
+    ]
+  },
+  {
+    "name": "Tel-Aide Québec",
+    "address": "Montréal",
+    "phone": "514-935-1101",
+    "type": "CRISIS",
+    "cities": [
+      "Montréal",
+      "Laval",
+      "Longueuil",
+      "Brossard",
+      "Saint-Lambert",
+      "Greenfield Park",
+      "Lachine",
+      "LaSalle",
+      "Verdun",
+      "Côte-Saint-Luc",
+      "Mont-Royal",
+      "Westmount",
+      "Outremont",
+      "Rosemont",
+      "Plateau-Mont-Royal",
+      "Mile End",
+      "NDG",
+      "Côte-des-Neiges",
+      "Ahuntsic",
+      "Anjou",
+      "Saint-Léonard",
+      "Rivière-des-Prairies",
+      "Montréal-Nord",
+      "Saint-Michel",
+      "Villeray",
+      "Pierrefonds",
+      "Roxboro",
+      "Kirkland",
+      "Beaconsfield",
+      "Pointe-Claire",
+      "Dorval",
+      "Baie-d'Urfé",
+      "Sainte-Anne-de-Bellevue",
+      "Senneville"
+    ],
+    "province": "QC",
+    "tags": [
+      "24/7"
+    ]
+  },
+  {
+    "name": "CHUM (Centre hospitalier de l'Université de Montréal)",
+    "address": "1051 rue Sanguinet, Montréal",
+    "phone": "514-890-8000",
+    "type": "HOSPITAL",
+    "cities": [
+      "Montréal",
+      "Centre-ville",
+      "Plateau",
+      "Mile-Ex"
+    ],
+    "province": "QC",
+    "tags": []
+  },
+  {
+    "name": "McGill University Health Centre (Glen site)",
+    "address": "1001 boul. Décarie, Montréal",
+    "phone": "514-934-1934",
+    "type": "HOSPITAL",
+    "cities": [
+      "Montréal",
+      "NDG",
+      "Côte-Saint-Luc",
+      "Westmount"
+    ],
+    "province": "QC",
+    "tags": []
+  },
+  {
+    "name": "Montreal Children's Hospital",
+    "address": "1001 boul. Décarie, Montréal",
+    "phone": "514-412-4400",
+    "type": "HOSPITAL",
+    "cities": [
+      "Montréal"
+    ],
+    "province": "QC",
+    "tags": [
+      "youth",
+      "children"
+    ]
+  },
+  {
+    "name": "Jewish General Hospital",
+    "address": "3755 ch. de la Côte-Sainte-Catherine, Montréal",
+    "phone": "514-340-8222",
+    "type": "HOSPITAL",
+    "cities": [
+      "Montréal",
+      "Côte-des-Neiges",
+      "Outremont",
+      "Côte-Saint-Luc"
+    ],
+    "province": "QC",
+    "tags": []
+  },
+  {
+    "name": "Hôpital du Sacré-Coeur (Montréal)",
+    "address": "5400 boul. Gouin O, Montréal",
+    "phone": "514-338-2222",
+    "type": "HOSPITAL",
+    "cities": [
+      "Montréal",
+      "Ahuntsic",
+      "Cartierville",
+      "Pierrefonds"
+    ],
+    "province": "QC",
+    "tags": []
+  },
+  {
+    "name": "Hôpital général de Québec / CHU de Québec",
+    "address": "11 Côte du Palais, Québec",
+    "phone": "418-525-4444",
+    "type": "HOSPITAL",
+    "cities": [
+      "Québec",
+      "Beauport",
+      "Charlesbourg",
+      "Sainte-Foy",
+      "Sillery",
+      "Cap-Rouge",
+      "L'Ancienne-Lorette",
+      "Saint-Augustin-de-Desmaures"
+    ],
+    "province": "QC",
+    "tags": []
+  },
+  {
+    "name": "Centre de crise de Québec",
+    "address": "Québec City",
+    "phone": "418-688-4240",
+    "type": "CRISIS",
+    "cities": [
+      "Québec",
+      "Lévis",
+      "Sainte-Foy",
+      "Beauport",
+      "Charlesbourg",
+      "Loretteville",
+      "L'Ancienne-Lorette",
+      "Saint-Augustin",
+      "Lac-Saint-Charles",
+      "Stoneham",
+      "Wendake"
+    ],
+    "province": "QC",
+    "tags": [
+      "24/7"
+    ]
+  },
+  {
+    "name": "Hôpital Fleurimont (Sherbrooke)",
+    "address": "3001 12e Ave N, Sherbrooke",
+    "phone": "819-346-1110",
+    "type": "HOSPITAL",
+    "cities": [
+      "Sherbrooke",
+      "Fleurimont",
+      "Rock Forest",
+      "Lennoxville",
+      "Magog",
+      "Coaticook",
+      "Windsor",
+      "Asbestos",
+      "Danville",
+      "Richmond",
+      "Lac-Mégantic"
+    ],
+    "province": "QC",
+    "tags": []
+  },
+  {
+    "name": "Centre de crise de l'Estrie (Sherbrooke)",
+    "address": "Sherbrooke / Estrie",
+    "phone": "819-821-4000",
+    "type": "CRISIS",
+    "cities": [
+      "Sherbrooke",
+      "Magog",
+      "Coaticook",
+      "Lac-Mégantic",
+      "Windsor",
+      "Asbestos",
+      "Granby",
+      "Cowansville",
+      "Bromont"
+    ],
+    "province": "QC",
+    "tags": [
+      "24/7"
+    ]
+  },
+  {
+    "name": "Hôpital de Gatineau (CISSSO)",
+    "address": "909 boul. La Vérendrye O, Gatineau",
+    "phone": "819-966-6100",
+    "type": "HOSPITAL",
+    "cities": [
+      "Gatineau",
+      "Aylmer",
+      "Hull",
+      "Buckingham",
+      "Masson-Angers",
+      "Chelsea",
+      "Wakefield",
+      "Cantley",
+      "Pontiac",
+      "Shawville"
+    ],
+    "province": "QC",
+    "tags": []
+  },
+  {
+    "name": "Centre de crise de l'Outaouais (Gatineau)",
+    "address": "Gatineau / Outaouais",
+    "phone": "819-775-3331",
+    "type": "CRISIS",
+    "cities": [
+      "Gatineau",
+      "Aylmer",
+      "Hull",
+      "Buckingham",
+      "Chelsea",
+      "Wakefield",
+      "Pontiac",
+      "Shawville",
+      "Maniwaki",
+      "Low",
+      "Kazabazua"
+    ],
+    "province": "QC",
+    "tags": [
+      "24/7"
+    ]
+  },
+  {
+    "name": "Hôpital de Saguenay (Chicoutimi)",
+    "address": "305 rue Saint-Vallier, Chicoutimi",
+    "phone": "418-541-1000",
+    "type": "HOSPITAL",
+    "cities": [
+      "Saguenay",
+      "Chicoutimi",
+      "Jonquière",
+      "La Baie",
+      "Alma",
+      "Saint-Félicien",
+      "Dolbeau-Mistassini",
+      "Roberval",
+      "Métabetchouan"
+    ],
+    "province": "QC",
+    "tags": []
+  },
+  {
+    "name": "Hôtel-Dieu de Lévis",
+    "address": "143 rue Wolfe, Lévis",
+    "phone": "418-835-7121",
+    "type": "HOSPITAL",
+    "cities": [
+      "Lévis",
+      "Saint-Romuald",
+      "Saint-Nicolas",
+      "Charny",
+      "Scott",
+      "Saint-Henri",
+      "Saint-Anselme"
+    ],
+    "province": "QC",
+    "tags": []
+  },
+  {
+    "name": "Centre de crise Abitibi-Témiscamingue",
+    "address": "Rouyn-Noranda / Val-d'Or",
+    "phone": "819-764-2572",
+    "type": "CRISIS",
+    "cities": [
+      "Rouyn-Noranda",
+      "Val-d'Or",
+      "Amos",
+      "La Sarre",
+      "Malartic",
+      "Senneterre",
+      "Lebel-sur-Quévillon",
+      "Ville-Marie",
+      "Témiscaming",
+      "Notre-Dame-du-Nord"
+    ],
+    "province": "QC",
+    "tags": [
+      "24/7"
+    ]
+  },
+  {
+    "name": "Centre de crise de la Mauricie (Trois-Rivières)",
+    "address": "Trois-Rivières / Mauricie",
+    "phone": "819-379-1111",
+    "type": "CRISIS",
+    "cities": [
+      "Trois-Rivières",
+      "Shawinigan",
+      "La Tuque",
+      "Louiseville",
+      "Bécancour",
+      "Nicolet",
+      "Victoriaville",
+      "Plessisville",
+      "Thetford Mines",
+      "Disraeli"
+    ],
+    "province": "QC",
+    "tags": [
+      "24/7"
+    ]
+  },
+  {
+    "name": "Manitoba Suicide Prevention & Support Line",
+    "address": "Manitoba-wide",
+    "phone": "1-877-435-7170",
+    "type": "CRISIS",
+    "cities": [
+      "ALL"
+    ],
+    "province": "MB",
+    "tags": [
+      "24/7"
+    ]
+  },
+  {
+    "name": "Klinic Crisis Line (Winnipeg)",
+    "address": "Winnipeg",
+    "phone": "204-786-8686",
+    "type": "CRISIS",
+    "cities": [
+      "Winnipeg",
+      "St. Boniface",
+      "St. Vital",
+      "Transcona",
+      "St. James",
+      "Charleswood",
+      "Tuxedo",
+      "River Heights",
+      "Fort Rouge",
+      "Elmwood",
+      "East Kildonan",
+      "West Kildonan",
+      "North Kildonan",
+      "The Pas",
+      "Thompson",
+      "Brandon",
+      "Portage la Prairie",
+      "Steinbach",
+      "Selkirk",
+      "Morden",
+      "Winkler",
+      "Dauphin",
+      "Swan River",
+      "Flin Flon"
+    ],
+    "province": "MB",
+    "tags": [
+      "24/7"
+    ]
+  },
+  {
+    "name": "Health Sciences Centre Winnipeg",
+    "address": "820 Sherbrook St, Winnipeg",
+    "phone": "204-787-3661",
+    "type": "HOSPITAL",
+    "cities": [
+      "Winnipeg",
+      "St. James",
+      "Portage",
+      "Headingley"
+    ],
+    "province": "MB",
+    "tags": []
+  },
+  {
+    "name": "St. Boniface Hospital",
+    "address": "409 Taché Ave, Winnipeg",
+    "phone": "204-233-8563",
+    "type": "HOSPITAL",
+    "cities": [
+      "Winnipeg",
+      "St. Boniface",
+      "St. Vital",
+      "St. Pierre",
+      "Niverville"
+    ],
+    "province": "MB",
+    "tags": []
+  },
+  {
+    "name": "Brandon General Hospital",
+    "address": "150 McTavish Ave E, Brandon",
+    "phone": "204-578-4000",
+    "type": "HOSPITAL",
+    "cities": [
+      "Brandon",
+      "Carberry",
+      "Neepawa",
+      "Minnedosa",
+      "Souris",
+      "Virden",
+      "Melita",
+      "Boissevain",
+      "Deloraine",
+      "Waskada",
+      "Hartney",
+      "Elkhorn",
+      "Hamiota",
+      "Sandy Lake",
+      "Ste. Rose"
+    ],
+    "province": "MB",
+    "tags": []
+  },
+  {
+    "name": "Brandon Crisis Line",
+    "address": "Brandon / Western MB",
+    "phone": "204-725-4411",
+    "type": "CRISIS",
+    "cities": [
+      "Brandon",
+      "Carberry",
+      "Neepawa",
+      "Minnedosa",
+      "Souris",
+      "Virden",
+      "Melita",
+      "Boissevain",
+      "Deloraine"
+    ],
+    "province": "MB",
+    "tags": [
+      "24/7"
+    ]
+  },
+  {
+    "name": "Thompson Crisis Line / Northern Manitoba",
+    "address": "Thompson / Northern MB",
+    "phone": "204-677-9388",
+    "type": "CRISIS",
+    "cities": [
+      "Thompson",
+      "The Pas",
+      "Snow Lake",
+      "Flin Flon",
+      "Lynn Lake",
+      "Leaf Rapids",
+      "Cross Lake",
+      "Norway House",
+      "Gillam",
+      "Churchill"
+    ],
+    "province": "MB",
+    "tags": [
+      "24/7"
+    ]
+  },
+  {
+    "name": "Steinbach / Southeast MB Crisis",
+    "address": "Steinbach / Southeast MB",
+    "phone": "204-346-5555",
+    "type": "CRISIS",
+    "cities": [
+      "Steinbach",
+      "Niverville",
+      "Ste. Anne",
+      "La Broquerie",
+      "Grunthal",
+      "Hanover",
+      "Landmark",
+      "Kleefeld",
+      "Mitchell",
+      "Blumenort"
+    ],
+    "province": "MB",
+    "tags": [
+      "24/7"
+    ]
+  },
+  {
+    "name": "Saskatchewan Crisis Line",
+    "address": "Saskatchewan-wide",
+    "phone": "1-833-456-4566",
+    "type": "CRISIS",
+    "cities": [
+      "ALL"
+    ],
+    "province": "SK",
+    "tags": [
+      "24/7"
+    ]
+  },
+  {
+    "name": "Mobile Crisis Services (Regina)",
+    "address": "Regina",
+    "phone": "306-525-5333",
+    "type": "CRISIS",
+    "cities": [
+      "Regina",
+      "White City",
+      "Pilot Butte",
+      "Emerald Park",
+      "Balgonie",
+      "Lumsden",
+      "Moose Jaw",
+      "Caronport",
+      "Assiniboia",
+      "Weyburn",
+      "Estevan",
+      "Moosomin",
+      "Whitewood",
+      "Indian Head",
+      "Fort Qu'Appelle",
+      "Melville"
+    ],
+    "province": "SK",
+    "tags": [
+      "24/7"
+    ]
+  },
+  {
+    "name": "Regina General Hospital",
+    "address": "1440 14th Ave, Regina",
+    "phone": "306-337-4411",
+    "type": "HOSPITAL",
+    "cities": [
+      "Regina",
+      "White City",
+      "Balgonie",
+      "Lumsden"
+    ],
+    "province": "SK",
+    "tags": []
+  },
+  {
+    "name": "Pasqua Hospital (Regina)",
+    "address": "4101 Dewdney Ave, Regina",
+    "phone": "306-766-2222",
+    "type": "HOSPITAL",
+    "cities": [
+      "Regina",
+      "Pilot Butte",
+      "White City"
+    ],
+    "province": "SK",
+    "tags": []
+  },
+  {
+    "name": "Saskatoon Crisis Line",
+    "address": "Saskatoon",
+    "phone": "306-933-6200",
+    "type": "CRISIS",
+    "cities": [
+      "Saskatoon",
+      "Martensville",
+      "Warman",
+      "Osler",
+      "Dalmeny",
+      "Allan",
+      "Watrous",
+      "Humboldt",
+      "Melfort",
+      "Tisdale",
+      "Nipawin",
+      "Prince Albert",
+      "Rosthern",
+      "Waldheim",
+      "Langham",
+      "Delisle",
+      "Outlook",
+      "Elbow",
+      "Birsay",
+      "Zealandia",
+      "Kindersley",
+      "Biggar",
+      "Unity"
+    ],
+    "province": "SK",
+    "tags": [
+      "24/7"
+    ]
+  },
+  {
+    "name": "Royal University Hospital (Saskatoon)",
+    "address": "103 Hospital Dr, Saskatoon",
+    "phone": "306-655-1000",
+    "type": "HOSPITAL",
+    "cities": [
+      "Saskatoon",
+      "Martensville",
+      "Warman",
+      "Osler"
+    ],
+    "province": "SK",
+    "tags": []
+  },
+  {
+    "name": "St. Paul's Hospital (Saskatoon)",
+    "address": "1702 20th St W, Saskatoon",
+    "phone": "306-655-5000",
+    "type": "HOSPITAL",
+    "cities": [
+      "Saskatoon"
+    ],
+    "province": "SK",
+    "tags": []
+  },
+  {
+    "name": "Prince Albert Victoria Hospital",
+    "address": "1521 6th Ave W, Prince Albert",
+    "phone": "306-765-6000",
+    "type": "HOSPITAL",
+    "cities": [
+      "Prince Albert",
+      "Shellbrook",
+      "Spiritwood",
+      "Melfort",
+      "Nipawin",
+      "Tisdale",
+      "Candle Lake",
+      "Christopher Lake"
+    ],
+    "province": "SK",
+    "tags": []
+  },
+  {
+    "name": "Prince Albert Crisis Line",
+    "address": "Prince Albert / Northern SK",
+    "phone": "306-764-1011",
+    "type": "CRISIS",
+    "cities": [
+      "Prince Albert",
+      "Shellbrook",
+      "Spiritwood",
+      "Nipawin",
+      "Tisdale",
+      "Melfort",
+      "La Ronge",
+      "Creighton",
+      "Buffalo Narrows",
+      "Ile-a-la-Crosse",
+      "Beauval",
+      "Meadow Lake",
+      "Green Lake",
+      "Loon Lake",
+      "Paradise Hill"
+    ],
+    "province": "SK",
+    "tags": [
+      "24/7"
+    ]
+  },
+  {
+    "name": "Moose Jaw Crisis",
+    "address": "Moose Jaw",
+    "phone": "306-692-6533",
+    "type": "CRISIS",
+    "cities": [
+      "Moose Jaw",
+      "Caronport",
+      "Parkbeg",
+      "Boharm",
+      "Eyebrow",
+      "Chaplin",
+      "Mortlach",
+      "Brownlee",
+      "Marquis",
+      "Eston",
+      "Elbow",
+      "Outlook",
+      "Kenaston",
+      "Outlook",
+      "Birsay",
+      "Herbert",
+      "Morse",
+      "Neville",
+      "Coderre"
+    ],
+    "province": "SK",
+    "tags": [
+      "24/7"
+    ]
+  },
+  {
+    "name": "Cypress Regional Hospital (Swift Current)",
+    "address": "2004 Saskatchewan Dr, Swift Current",
+    "phone": "306-778-9400",
+    "type": "HOSPITAL",
+    "cities": [
+      "Swift Current",
+      "Maple Creek",
+      "Shaunavon",
+      "Gull Lake",
+      "Cabri",
+      "Leader",
+      "Eastend",
+      "Robsart",
+      "Consul",
+      "Climax",
+      "Frontier",
+      "Val Marie",
+      "Wood Mountain"
+    ],
+    "province": "SK",
+    "tags": []
+  },
+  {
+    "name": "Nova Scotia Crisis Line",
+    "address": "Nova Scotia-wide",
+    "phone": "1-888-429-8167",
+    "type": "CRISIS",
+    "cities": [
+      "ALL"
+    ],
+    "province": "NS",
+    "tags": [
+      "24/7"
+    ]
+  },
+  {
+    "name": "QEII Health Sciences Centre (Halifax)",
+    "address": "1796 Summer St, Halifax",
+    "phone": "902-473-2220",
+    "type": "HOSPITAL",
+    "cities": [
+      "Halifax",
+      "Dartmouth",
+      "Bedford",
+      "Sackville",
+      "Fall River",
+      "Waverley",
+      "Enfield",
+      "Elmsdale",
+      "Lantz"
+    ],
+    "province": "NS",
+    "tags": []
+  },
+  {
+    "name": "IWK Health Centre (Halifax)",
+    "address": "5980 University Ave, Halifax",
+    "phone": "902-470-8888",
+    "type": "HOSPITAL",
+    "cities": [
+      "Halifax"
+    ],
+    "province": "NS",
+    "tags": [
+      "youth",
+      "children"
+    ]
+  },
+  {
+    "name": "Dartmouth General Hospital",
+    "address": "325 Pleasant St, Dartmouth",
+    "phone": "902-465-8300",
+    "type": "HOSPITAL",
+    "cities": [
+      "Dartmouth",
+      "Cole Harbour",
+      "Westphal",
+      "Eastern Passage",
+      "Woodside",
+      "Burnside"
+    ],
+    "province": "NS",
+    "tags": []
+  },
+  {
+    "name": "Cape Breton Regional Hospital (Sydney)",
+    "address": "1482 George St, Sydney",
+    "phone": "902-567-8000",
+    "type": "HOSPITAL",
+    "cities": [
+      "Sydney",
+      "Sydney Mines",
+      "Glace Bay",
+      "New Waterford",
+      "Dominion",
+      "Westmount",
+      "Reserve Mines",
+      "North Sydney",
+      "Baddeck",
+      "Cheticamp",
+      "Inverness",
+      "Port Hawkesbury",
+      "Mulgrave",
+      "Guysborough",
+      "Canso"
+    ],
+    "province": "NS",
+    "tags": []
+  },
+  {
+    "name": "Cape Breton Crisis Line",
+    "address": "Cape Breton / NS",
+    "phone": "902-567-1234",
+    "type": "CRISIS",
+    "cities": [
+      "Sydney",
+      "Glace Bay",
+      "New Waterford",
+      "North Sydney",
+      "Sydney Mines",
+      "Dominion",
+      "Baddeck",
+      "Cheticamp",
+      "Inverness",
+      "Port Hawkesbury",
+      "Antigonish",
+      "Guysborough",
+      "Canso",
+      "Mulgrave"
+    ],
+    "province": "NS",
+    "tags": [
+      "24/7"
+    ]
+  },
+  {
+    "name": "Valley Regional Hospital (Kentville)",
+    "address": "150 Exhibition St, Kentville",
+    "phone": "902-678-7381",
+    "type": "HOSPITAL",
+    "cities": [
+      "Kentville",
+      "Wolfville",
+      "Windsor",
+      "Berwick",
+      "Kingston",
+      "Middleton",
+      "Annapolis Royal",
+      "Bridgetown",
+      "Digby",
+      "Yarmouth",
+      "Shelburne",
+      "Liverpool",
+      "Bridgewater",
+      "Lunenburg",
+      "Mahone Bay",
+      "Chester",
+      "Mahone Bay"
+    ],
+    "province": "NS",
+    "tags": []
+  },
+  {
+    "name": "Yarmouth Regional Hospital",
+    "address": "60 Vancouver St, Yarmouth",
+    "phone": "902-742-3541",
+    "type": "HOSPITAL",
+    "cities": [
+      "Yarmouth",
+      "Shelburne",
+      "Lockeport",
+      "Liverpool",
+      "Milton",
+      "Bridgewater",
+      "Clark's Harbour",
+      "Barrington",
+      "Pubnico",
+      "Tusket",
+      "Meteghan"
+    ],
+    "province": "NS",
+    "tags": []
+  },
+  {
+    "name": "Antigonish / Pictou Crisis",
+    "address": "Northern NS",
+    "phone": "902-755-5000",
+    "type": "CRISIS",
+    "cities": [
+      "Antigonish",
+      "Pictou",
+      "New Glasgow",
+      "Trenton",
+      "Stellarton",
+      "Westville",
+      "Truro",
+      "Bible Hill",
+      "Amherst",
+      "Springhill",
+      "Oxford",
+      "Parrsboro",
+      "Pugwash",
+      "Tatamagouche",
+      "River John",
+      "Thorburn",
+      "Westville"
+    ],
+    "province": "NS",
+    "tags": [
+      "24/7"
+    ]
+  },
+  {
+    "name": "Aberdeen Hospital (New Glasgow)",
+    "address": "835 E River Rd, New Glasgow",
+    "phone": "902-752-7600",
+    "type": "HOSPITAL",
+    "cities": [
+      "New Glasgow",
+      "Pictou",
+      "Stellarton",
+      "Westville",
+      "Trenton",
+      "Antigonish",
+      "Heatherton",
+      "Pomquet",
+      "Bayfield"
+    ],
+    "province": "NS",
+    "tags": []
+  },
+  {
+    "name": "Colchester East Hants Health Centre (Truro)",
+    "address": "600 Abenaki Rd, Truro",
+    "phone": "902-893-4321",
+    "type": "HOSPITAL",
+    "cities": [
+      "Truro",
+      "Bible Hill",
+      "Hilden",
+      "Enfield",
+      "Elmsdale",
+      "Stewiacke",
+      "Shubenacadie",
+      "Milford",
+      "Debert",
+      "Tatamagouche",
+      "Pugwash",
+      "Amherst",
+      "Oxford",
+      "Parrsboro",
+      "Springhill"
+    ],
+    "province": "NS",
+    "tags": []
+  },
+  {
+    "name": "New Brunswick Crisis Line",
+    "address": "New Brunswick-wide",
+    "phone": "1-800-667-5005",
+    "type": "CRISIS",
+    "cities": [
+      "ALL"
+    ],
+    "province": "NB",
+    "tags": [
+      "24/7"
+    ]
+  },
+  {
+    "name": "Chalmers Hospital (Fredericton)",
+    "address": "848 Priestman St, Fredericton",
+    "phone": "506-452-5400",
+    "type": "HOSPITAL",
+    "cities": [
+      "Fredericton",
+      "Oromocto",
+      "Gagetown",
+      "Sussex",
+      "Minto",
+      "Chipman",
+      "Jemseg",
+      "Tracadie-Sheila"
+    ],
+    "province": "NB",
+    "tags": []
+  },
+  {
+    "name": "Saint John Regional Hospital",
+    "address": "400 University Ave, Saint John",
+    "phone": "506-648-6000",
+    "type": "HOSPITAL",
+    "cities": [
+      "Saint John",
+      "Rothesay",
+      "Quispamsis",
+      "Grand Bay-Westfield",
+      "Hampton",
+      "Sussex",
+      "St. Stephen",
+      "St. George",
+      "Blacks Harbour",
+      "Moncton"
+    ],
+    "province": "NB",
+    "tags": []
+  },
+  {
+    "name": "The Moncton Hospital",
+    "address": "135 MacBeath Ave, Moncton",
+    "phone": "506-857-5111",
+    "type": "HOSPITAL",
+    "cities": [
+      "Moncton",
+      "Riverview",
+      "Dieppe",
+      "Shediac",
+      "Sackville",
+      "Amherst NS",
+      "Petitcodiac",
+      "Sussex",
+      "Salisbury",
+      "Memramcook",
+      "Bouctouche",
+      "Richibucto",
+      "Rexton",
+      "Cap-Pelé",
+      "Haute-Aboujagane"
+    ],
+    "province": "NB",
+    "tags": []
+  },
+  {
+    "name": "Campbellton Regional Hospital",
+    "address": "189 Lily Lake Rd, Campbellton",
+    "phone": "506-789-5000",
+    "type": "HOSPITAL",
+    "cities": [
+      "Campbellton",
+      "Dalhousie",
+      "Tide Head",
+      "Atholville",
+      "Kedgwick",
+      "Saint-Quentin",
+      "Sainte-Anne-de-Madawaska"
+    ],
+    "province": "NB",
+    "tags": []
+  },
+  {
+    "name": "Edmundston Regional Hospital",
+    "address": "275 Hébert Blvd, Edmundston",
+    "phone": "506-739-2200",
+    "type": "HOSPITAL",
+    "cities": [
+      "Edmundston",
+      "Grand Falls",
+      "Grand Sault",
+      "Saint-Léonard",
+      "Clair",
+      "Saint-Basile",
+      "Rivière-Verte",
+      "Baker Brook",
+      "Saint-François",
+      "Connors",
+      "Sainte-Anne-de-Madawaska"
+    ],
+    "province": "NB",
+    "tags": []
+  },
+  {
+    "name": "Miramichi Crisis",
+    "address": "Miramichi / Central NB",
+    "phone": "506-623-3000",
+    "type": "CRISIS",
+    "cities": [
+      "Miramichi",
+      "Chatham",
+      "Newcastle",
+      "Doaktown",
+      "Boiestown",
+      "Blackville",
+      "Renous",
+      "Millerton",
+      "Red Bank",
+      "Bay du Vin",
+      "Neguac",
+      "Alnwick"
+    ],
+    "province": "NB",
+    "tags": [
+      "24/7"
+    ]
+  },
+  {
+    "name": "Bathurst / Chaleur Crisis (Vitalité)",
+    "address": "Bathurst / Chaleur Region",
+    "phone": "506-544-3200",
+    "type": "CRISIS",
+    "cities": [
+      "Bathurst",
+      "Beresford",
+      "Petit-Rocher",
+      "Nigadoo",
+      "Belledune",
+      "Dalhousie",
+      "Campbellton",
+      "Caraquet",
+      "Tracadie-Sheila",
+      "Shippagan",
+      "Lamèque",
+      "Miscou",
+      "Grande-Anse",
+      "Saint-Isidore"
+    ],
+    "province": "NB",
+    "tags": [
+      "24/7"
+    ]
+  },
+  {
+    "name": "PEI Crisis Line",
+    "address": "Prince Edward Island-wide",
+    "phone": "1-800-218-2885",
+    "type": "CRISIS",
+    "cities": [
+      "ALL"
+    ],
+    "province": "PE",
+    "tags": [
+      "24/7"
+    ]
+  },
+  {
+    "name": "Queen Elizabeth Hospital (Charlottetown)",
+    "address": "60 Riverside Dr, Charlottetown",
+    "phone": "902-894-2111",
+    "type": "HOSPITAL",
+    "cities": [
+      "Charlottetown",
+      "Stratford",
+      "Cornwall",
+      "Sherwood",
+      "East Royalty",
+      "West Royalty",
+      "Parkdale",
+      "Winsloe",
+      "Mount Herbert",
+      "Eliot River",
+      "Hunter River",
+      "Breadalbane",
+      "Bonshaw"
+    ],
+    "province": "PE",
+    "tags": []
+  },
+  {
+    "name": "Prince County Hospital (Summerside)",
+    "address": "65 Roy Boates Ave, Summerside",
+    "phone": "902-432-2500",
+    "type": "HOSPITAL",
+    "cities": [
+      "Summerside",
+      "Kensington",
+      "Borden-Carleton",
+      "Tignish",
+      "Alberton",
+      "O'Leary",
+      "Bloomfield",
+      "Miscouche",
+      "Wellington",
+      "Borden",
+      "Travellers Rest"
+    ],
+    "province": "PE",
+    "tags": []
+  },
+  {
+    "name": "Kings County Memorial Hospital (Montague)",
+    "address": "409 MacLeod Dr, Montague",
+    "phone": "902-838-0777",
+    "type": "HOSPITAL",
+    "cities": [
+      "Montague",
+      "Georgetown",
+      "Murray Harbour",
+      "Murray River",
+      "Cardigan",
+      "Souris",
+      "Morell",
+      "St. Peters",
+      "Rollo Bay",
+      "Fortune",
+      "Guernsey Cove",
+      "Belfast",
+      "Lyndale",
+      "Brudenell",
+      "Valleyfield"
+    ],
+    "province": "PE",
+    "tags": []
+  },
+  {
+    "name": "PEI Community Mental Health",
+    "address": "Charlottetown / Island-wide",
+    "phone": "902-368-4911",
+    "type": "MENTAL_HEALTH",
+    "cities": [
+      "Charlottetown",
+      "Summerside",
+      "Montague",
+      "Alberton",
+      "Kensington",
+      "Tignish",
+      "Souris",
+      "Georgetown",
+      "O'Leary",
+      "Borden-Carleton",
+      "Miscouche",
+      "Wellington",
+      "Stratford",
+      "Cornwall"
+    ],
+    "province": "PE",
+    "tags": []
+  },
+  {
+    "name": "NL Mental Health Crisis Line",
+    "address": "Newfoundland & Labrador-wide",
+    "phone": "1-888-737-4668",
+    "type": "CRISIS",
+    "cities": [
+      "ALL"
+    ],
+    "province": "NL",
+    "tags": [
+      "24/7"
+    ]
+  },
+  {
+    "name": "Health Sciences Centre (St. John's)",
+    "address": "300 Prince Philip Dr, St. John's",
+    "phone": "709-777-6300",
+    "type": "HOSPITAL",
+    "cities": [
+      "St. John's",
+      "Mount Pearl",
+      "Paradise",
+      "Conception Bay South",
+      "Bell Island",
+      "Portugal Cove-St. Phillips",
+      "Torbay",
+      "Flatrock",
+      "Bauline",
+      "Pouch Cove",
+      "Logy Bay",
+      "Middle Cove",
+      "Outer Cove"
+    ],
+    "province": "NL",
+    "tags": []
+  },
+  {
+    "name": "Janeway Children's Hospital (St. John's)",
+    "address": "300 Prince Philip Dr, St. John's",
+    "phone": "709-777-4222",
+    "type": "HOSPITAL",
+    "cities": [
+      "St. John's",
+      "Paradise",
+      "Mount Pearl"
+    ],
+    "province": "NL",
+    "tags": [
+      "youth",
+      "children"
+    ]
+  },
+  {
+    "name": "St. Clare's Mercy Hospital (St. John's)",
+    "address": "154 LeMarchant Rd, St. John's",
+    "phone": "709-777-5000",
+    "type": "HOSPITAL",
+    "cities": [
+      "St. John's",
+      "Downtown",
+      "Rabbittown",
+      "Pleasantville"
+    ],
+    "province": "NL",
+    "tags": []
+  },
+  {
+    "name": "St. John's Crisis",
+    "address": "St. John's / Northeast Avalon",
+    "phone": "709-737-4668",
+    "type": "CRISIS",
+    "cities": [
+      "St. John's",
+      "Mount Pearl",
+      "Paradise",
+      "Conception Bay South",
+      "Holyrood",
+      "Placentia",
+      "Whitbourne",
+      "Harbour Grace",
+      "Carbonear",
+      "Heart's Content",
+      "Burin",
+      "Marystown",
+      "St. Lawrence",
+      "Fortune",
+      "Grand Bank"
+    ],
+    "province": "NL",
+    "tags": [
+      "24/7"
+    ]
+  },
+  {
+    "name": "James Paton Memorial Hospital (Gander)",
+    "address": "125 Trans-Canada Hwy, Gander",
+    "phone": "709-256-2500",
+    "type": "HOSPITAL",
+    "cities": [
+      "Gander",
+      "Grand Falls-Windsor",
+      "Bishop's Falls",
+      "Botwood",
+      "Lewisporte",
+      "Twillingate",
+      "Fogo Island",
+      "Change Islands",
+      "Carmanville",
+      "Glovertown",
+      "Terra Nova",
+      "Clarenville"
+    ],
+    "province": "NL",
+    "tags": []
+  },
+  {
+    "name": "Central NL Crisis Line",
+    "address": "Gander / Grand Falls / Central NL",
+    "phone": "709-292-2060",
+    "type": "CRISIS",
+    "cities": [
+      "Gander",
+      "Grand Falls-Windsor",
+      "Bishop's Falls",
+      "Botwood",
+      "Lewisporte",
+      "Twillingate",
+      "Fogo Island",
+      "Springdale",
+      "Baie Verte",
+      "Buchans",
+      "Badger"
+    ],
+    "province": "NL",
+    "tags": [
+      "24/7"
+    ]
+  },
+  {
+    "name": "Western Memorial Regional Hospital (Corner Brook)",
+    "address": "1 Brookfield Ave, Corner Brook",
+    "phone": "709-637-5000",
+    "type": "HOSPITAL",
+    "cities": [
+      "Corner Brook",
+      "Stephenville",
+      "Port aux Basques",
+      "Deer Lake",
+      "Pasadena",
+      "Steady Brook",
+      "Massey Drive",
+      "Irishtown",
+      "Summerside",
+      "Cox's Cove",
+      "McIvers",
+      "Gillams",
+      "Lark Harbour",
+      "York Harbour",
+      "Bay of Islands"
+    ],
+    "province": "NL",
+    "tags": []
+  },
+  {
+    "name": "Western NL Crisis Line",
+    "address": "Corner Brook / Western NL",
+    "phone": "709-639-2210",
+    "type": "CRISIS",
+    "cities": [
+      "Corner Brook",
+      "Stephenville",
+      "Port aux Basques",
+      "Deer Lake",
+      "Pasadena",
+      "St. Anthony",
+      "Roddickton",
+      "Englee",
+      "Jackson's Arm",
+      "Springdale",
+      "Baie Verte",
+      "Ramea",
+      "Burgeo",
+      "La Poile",
+      "Port aux Basques"
+    ],
+    "province": "NL",
+    "tags": [
+      "24/7"
+    ]
+  },
+  {
+    "name": "Labrador Health Centre (Happy Valley-Goose Bay)",
+    "address": "1 Marconi Blvd, Happy Valley-Goose Bay",
+    "phone": "709-897-2000",
+    "type": "HOSPITAL",
+    "cities": [
+      "Happy Valley-Goose Bay",
+      "Labrador City",
+      "Wabush",
+      "Churchill Falls",
+      "Forteau",
+      "L'Anse au Clair",
+      "Blanc-Sablon",
+      "Red Bay",
+      "Cartwright",
+      "Postville",
+      "Rigolet",
+      "Makkovik",
+      "Hopedale",
+      "Nain"
+    ],
+    "province": "NL",
+    "tags": []
+  },
+  {
+    "name": "Labrador-Grenfell Crisis Line",
+    "address": "Labrador / Northern NL",
+    "phone": "1-800-563-4636",
+    "type": "CRISIS",
+    "cities": [
+      "Labrador City",
+      "Wabush",
+      "Happy Valley-Goose Bay",
+      "Churchill Falls",
+      "Forteau",
+      "L'Anse au Clair",
+      "Blanc-Sablon",
+      "Cartwright",
+      "Postville",
+      "Rigolet",
+      "Makkovik",
+      "Hopedale",
+      "Nain",
+      "St. Anthony",
+      "Roddickton"
+    ],
+    "province": "NL",
+    "tags": [
+      "24/7"
+    ]
+  },
+  {
+    "name": "NWT Help Line",
+    "address": "Northwest Territories-wide",
+    "phone": "1-800-661-0844",
+    "type": "CRISIS",
+    "cities": [
+      "ALL"
+    ],
+    "province": "NT",
+    "tags": [
+      "24/7"
+    ]
+  },
+  {
+    "name": "Stanton Territorial Hospital (Yellowknife)",
+    "address": "550 Byrne Rd, Yellowknife",
+    "phone": "867-669-4111",
+    "type": "HOSPITAL",
+    "cities": [
+      "Yellowknife",
+      "Ndilo",
+      "Dettah",
+      "Ingraham Trail",
+      "Enterprise",
+      "Hay River",
+      "Fort Smith",
+      "Fort Resolution",
+      "Behchokǫ̀",
+      "Whatì",
+      "Gamètì",
+      "Wekweètì",
+      "Lutselk'e",
+      "Fort Liard",
+      "Jean Marie River",
+      "Kakisa",
+      "Fort Providence",
+      "Fort Simpson",
+      "Wrigley",
+      "Tulita",
+      "Fort Good Hope",
+      "Colville Lake",
+      "Deline",
+      "Norman Wells",
+      "Inuvik",
+      "Aklavik",
+      "Tsiigehtchic",
+      "Fort McPherson",
+      "Paulatuk",
+      "Sachs Harbour",
+      "Ulukhaktok"
+    ],
+    "province": "NT",
+    "tags": []
+  },
+  {
+    "name": "Hay River Health & Social Services",
+    "address": "Hay River",
+    "phone": "867-874-7100",
+    "type": "HOSPITAL",
+    "cities": [
+      "Hay River",
+      "Fort Resolution",
+      "Enterprise",
+      "Kakisa",
+      "K'atlodeeche First Nation"
+    ],
+    "province": "NT",
+    "tags": []
+  },
+  {
+    "name": "Beaufort-Delta Health (Inuvik)",
+    "address": "Inuvik",
+    "phone": "867-777-8000",
+    "type": "HOSPITAL",
+    "cities": [
+      "Inuvik",
+      "Aklavik",
+      "Tsiigehtchic",
+      "Fort McPherson",
+      "Paulatuk",
+      "Sachs Harbour",
+      "Ulukhaktok",
+      "Tuktoyaktuk"
+    ],
+    "province": "NT",
+    "tags": []
+  },
+  {
+    "name": "Deh Cho Health (Fort Simpson)",
+    "address": "Fort Simpson",
+    "phone": "867-695-7000",
+    "type": "HOSPITAL",
+    "cities": [
+      "Fort Simpson",
+      "Fort Liard",
+      "Jean Marie River",
+      "Nahanni Butte",
+      "Trout Lake",
+      "Wrigley",
+      "Kakisa",
+      "Fort Providence"
+    ],
+    "province": "NT",
+    "tags": []
+  },
+  {
+    "name": "Yukon 811 / Crisis Line",
+    "address": "Yukon-wide",
+    "phone": "811 or 1-800-661-0408",
+    "type": "CRISIS",
+    "cities": [
+      "ALL"
+    ],
+    "province": "YT",
+    "tags": [
+      "24/7"
+    ]
+  },
+  {
+    "name": "Whitehorse General Hospital",
+    "address": "5 Hospital Rd, Whitehorse",
+    "phone": "867-393-8700",
+    "type": "HOSPITAL",
+    "cities": [
+      "Whitehorse",
+      "Riverdale",
+      "Porter Creek",
+      "Takhini",
+      "Crestview",
+      "Granger",
+      "Copper Ridge",
+      "Hillcrest",
+      "Logan",
+      "Dawson City",
+      "Carmacks",
+      "Faro",
+      "Mayo",
+      "Pelly Crossing",
+      "Haines Junction",
+      "Destruction Bay",
+      "Burwash Landing",
+      "Beaver Creek",
+      "Watson Lake",
+      "Teslin",
+      "Carcross",
+      "Tagish",
+      "Ross River",
+      "Elsa",
+      "Keno City",
+      "Old Crow"
+    ],
+    "province": "YT",
+    "tags": []
+  },
+  {
+    "name": "Whitehorse Mental Health (Yukon Health)",
+    "address": "Whitehorse",
+    "phone": "867-667-8681",
+    "type": "MENTAL_HEALTH",
+    "cities": [
+      "Whitehorse",
+      "Riverdale",
+      "Porter Creek",
+      "Dawson City",
+      "Watson Lake",
+      "Haines Junction",
+      "Carmacks",
+      "Faro",
+      "Mayo",
+      "Ross River",
+      "Teslin",
+      "Carcross"
+    ],
+    "province": "YT",
+    "tags": []
+  },
+  {
+    "name": "Nunavut Kamatsiaqtut Helpline",
+    "address": "Nunavut-wide",
+    "phone": "1-800-265-3333",
+    "type": "CRISIS",
+    "cities": [
+      "ALL"
+    ],
+    "province": "NU",
+    "tags": [
+      "24/7"
+    ]
+  },
+  {
+    "name": "Qikiqtani General Hospital (Iqaluit)",
+    "address": "1 Tikinahak Rd, Iqaluit",
+    "phone": "867-979-7300",
+    "type": "HOSPITAL",
+    "cities": [
+      "Iqaluit",
+      "Apex",
+      "Kimmirut",
+      "Cape Dorset",
+      "Lake Harbour",
+      "Sanikiluaq",
+      "Pangnirtung",
+      "Clyde River",
+      "Qikiqtarjuaq",
+      "Broughton Island",
+      "Hall Beach",
+      "Igloolik",
+      "Arctic Bay",
+      "Nanisivik",
+      "Resolute",
+      "Grise Fiord",
+      "Pond Inlet",
+      "Repulse Bay",
+      "Coral Harbour",
+      "Chesterfield Inlet"
+    ],
+    "province": "NU",
+    "tags": []
+  },
+  {
+    "name": "Kitikmeot Health (Cambridge Bay)",
+    "address": "Cambridge Bay",
+    "phone": "867-983-4500",
+    "type": "HOSPITAL",
+    "cities": [
+      "Cambridge Bay",
+      "Gjoa Haven",
+      "Taloyoak",
+      "Kugaaruk",
+      "Kugluktuk",
+      "Bathurst Inlet",
+      "Byron Bay"
+    ],
+    "province": "NU",
+    "tags": []
+  },
+  {
+    "name": "Kivalliq Health (Rankin Inlet)",
+    "address": "Rankin Inlet",
+    "phone": "867-645-8300",
+    "type": "HOSPITAL",
+    "cities": [
+      "Rankin Inlet",
+      "Whale Cove",
+      "Arviat",
+      "Baker Lake",
+      "Chesterfield Inlet",
+      "Coral Harbour",
+      "Naujaat",
+      "Repulse Bay",
+      "Sanikiluaq"
+    ],
+    "province": "NU",
+    "tags": []
+  }
+]
